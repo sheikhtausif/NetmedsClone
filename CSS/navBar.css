@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.navBar{
+    width: 100%;
+    height: 160px;
+    background-color: rgb(50, 174, 177);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+.pageHead{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    letter-spacing: 1px;
+}
+.pageWrap{
+    margin-top: 18px;
+}
+.logo{
+    width: 135px;
+}
+.searchDiv{
+    width: 46%;
+    height: 50px;
+    margin-left: 40px;
+    border: 1px solid black;
+}
+.invert{
+    filter: invert(1);
+}
+.cartIconDiv>img{
+    height: 20px;
+    width: 20px;
+}
+.userIconDiv>img{
+    height: 25px;
+    width: 24px;
+    border-radius: 50%;
+    /* background: #bc4747; */
+    background: #ae4848;
+    padding: 9px;
+}
+.cartIconDiv, .uploadDiv, .userIconDiv,.loginDiv{
+    margin-left: 24px;
+}
+
+/* * Main nav Css */
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 16%;
+}
+.nav>li>a{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+    /* display: flex; */
+}
+
+.nav>li{
+    list-style-type: none;
+    text-decoration: none;
+    width: 240px;
+}
+small {
+    font-size: 10px;
+    color: rgb(241, 245, 248);
+}
+.nav>li>a>img{
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-right: 14px;
+}
+.subNav{
+    display: none;
+}
+
+/* * Nav-2 */
+.nav-2{
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+}
+.nav-2>ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 17%;
+    
+}
+.nav-2>ul>li{
+    list-style-type: none;
+    margin-top: 20px;
+}
+.nav-2>ul>li>a{
+    color: rgb(82, 79, 79);
+    text-decoration: none;
+    background-color: transparent;
+}
