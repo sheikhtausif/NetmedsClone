@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.First_cont{
+    width: 100%;
+    height: auto;
+    background-color:#bfecf3;
+}
+.Diagos_start{
+    width: 95%;
+    display: flex;
+    margin: auto;
+   
+}
+.Diagos_start>div:nth-child(1)>img{
+    height: 75vh;
+}
+.form{
+    background-color: white;
+    padding: 1%;
+}
+.Forrmdata p,label{
+    margin-top: 5%;
+    margin-bottom: 4%;
+   
+}
+.Forrmdata label{
+ color: #02b7c2;
+}
+.Forrmdata select{
+    width: 100%;
+    padding: 2%;
+    border: none;
+}
+.Forrmdata input{
+    display: block;
+    font-weight: bolder;
+    /* border: none; */
+    margin-top: 1%;
+    margin-bottom: 4%;
+    width: 95%;
+    padding: 2.5%;
+  
+    
+}
+.checkbox{
+  padding: 2%;
+  margin-top: 6%;
+}
+ .form button{
+margin-top:5% ;
+}
+#booknow{
+    width: 100%;
+    height: 8vh;
+    background-color: #24aeb1;
+    border: none;
+    border-radius: 3%;
+    color: white;
+}
+.Diagos_start div{
+    margin: 1%;
+}
+.btn{
+    display: flex;
+}
+.form>div>button{
+  width: 150px;
+  padding: 2%;
+}
+
+
+/* ---------- */
+.main{
+    background-color: thistle;
+    border: 1px tomato solid;
+}
+.Second_cont{
+    width: 95%;
+   
+    background-color:white;
+    margin: auto;
+    margin-top: 2%;
+    padding: 2%;
+}
+.Second_cont p{
+    margin-top: 2%;
+}
+.packages{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+   
+    
+}
+
+.packages>div{
+    border: 2px solid red;
+    width: 15%;
+    /* margin: auto; */
+    margin: 1%;
+    height: 10vh;
+}
