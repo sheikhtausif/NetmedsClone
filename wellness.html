@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta chaRset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellness</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+
+      #top-add,
+      img {
+        width: 98vw;
+        margin: auto;
+      }
+      body {
+        background-color: #dae2e1;
+      }
+      #container {
+        width: 98vw;
+        /* height: 250px; */
+        margin: auto;
+      }
+/**=======================
+ * *       First section
+ *========================**/
+      .clearfix {
+        height: 320px;
+        border-radius: 10px;
+        background-color: white;
+        margin-bottom: 20px;
+      }
+      .home-shopby-category {
+        height: 80px;
+        padding-left: 20px;
+      }
+      .home-shopby-category h2 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding-left: 10px;
+        padding-top: 10px;
+        text-align: left;
+        line-height: 19.5px;
+        color: #6f7284;
+      }
+      .home-shopby-category span {
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding: 0 0;
+      }
+      .home-shopby-category p {
+        font-size: 14px;
+        padding-left: 0;
+
+        line-height: 2em;
+        color: #6f7284;
+      }
+      .product {
+        height: 250px;
+        display: flex;
+        overflow: scroll;
+        position: relative;
+      }
+/**=======================
+ * *    First Section Arrow
+ *========================**/   
+      /* arrow */
+      .left{
+        position: absolute;
+        bottom:-10px;
+        left:25px
+      }
+      .right{
+        position: absolute;
+        bottom:-10px;
+        left: 1380px;
+      }
+      .product > div {
+        width: 150px;
+        height: 175px;
+        text-align: center;
+        margin: 30px 45px;
+      }
+      .product img {
+        width: 150px;
+        height: 160px;
+        border: 1px solid #bbbbbd;
+        border-radius: 5px;
+      }
+/**=======================
+ * *       Section Section
+ *========================**/      
+      .clearfix-1{
+        height: 450px;
+        border-radius: 10px;
+        background-color: white;
+        margin-bottom: 20px;
+      }
+      .product1{
+         height: 350px;
+        display: flex;
+        overflow: scroll;  
+        margin-top: 20px;
+        position: relative;
+      }
+/**======================
+ *!    All Section Arrow
+ *========================**/      
+      /* arrow */
+      .lft{
+        position: absolute;
+        bottom:-480px;
+        left:25px
+
+      }
+      .rgt{
+        position: absolute;
+        bottom:-480px;
+        left: 1380px;
+      }
+      /* arrow */
+      .lt{
+        position: absolute;
+        bottom:-950px;
+        left:25px
+        
+      }
+      .rt{
+        position: absolute;
+        bottom:-950px;
+        left: 1380px;
+      }
+      /* arrow */
+      .le-ft{
+        position: absolute;
+        bottom:-1410px;
+        left:25px
+      }
+      .ri-ght{
+        position: absolute;
+        bottom:-1410px;
+        left: 1380px;
+
+      }
+      /* arrow */
+      .left-card{
+        position: absolute;
+        bottom:-1850px;
+        left:20px;
+      }
+      .right-card{
+        position: absolute;
+        bottom:-1850px;
+        left: 1385px;
+
+      }
+
+      #slide-btn{
+            width: 30px;
+            padding-bottom: 8px;
+            border-radius: 50%;
+            color: white;
+            border-color: white;
+            border: none;
+      }
+        .product1 img {
+        width: 70%;
+        height: 150px;
+        border-radius: 5px;
+        border-radius: 10px;
+        padding-top:10px;
+        margin-left: 32px;
+        cursor: pointer;
+      }
+      .item{
+          width: 220px;
+          height: 330px;
+          border: 1px solid #dae2e1;
+          border-radius: 10px;
+          /* margin: 0  60px; */
+          margin-right: 30px;
+          margin-left: 30px;
+
+        position: relative;
+      }
+      .item h4,p,span{
+            margin: 0 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            cursor: pointer;
+
+
+      }
+      del{
+          color:#bbbbbd ;
+      }
+      #btn{
+          background-color: #34aeb2;
+          color: white;
+          border: none;
+          width: 160px;
+          height: 40px;
+          margin: 10px 30px 10px 30px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      strong{
+          font-size: 20px;
+          color:#fb2855;
+          cursor: default;
+      }
+      .discount{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        border: none;
+        background-color: #86be52;
+        border-radius: 2px;
+      }
+/**=======================
+ * *       Sixth section
+ *========================**/      
+        .clearfix-2{
+        height: 350px;
+        border-radius: 10px;
+        background-color: white;
+      }
+        .product2{
+         height: 270px;
+        display: flex;
+        overflow: scroll;
+      }
+        .product2 img {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+      }
+        .item-1{
+        min-width: 270px;
+        height: 200px;
+        border-radius: 10px;
+        /* margin: 35px  20px;
+         */
+         margin-top:35px;
+         margin-left: 50px;
+         margin-right: 20px;
+        position: relative;
+        border:1px solid red
+      }
+
+      .item-1:nth-child(1){
+        background-color:rgb(255, 243, 235) ;
+      }
+      .item-1:nth-child(2){
+        background-color:#F6FAE8 ;
+      }
+      .item-1:nth-child(3){
+        background-color:#EBFEFC ;
+      }
+      .item-1:nth-child(4){
+        background-color:#EAF9FF ;
+      }
+      .text{
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        top: 10px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .text>span{
+          color: #34aeb2;
+      }
+      .text>h4{
+          padding-left: 30px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+
+<!--==========First-Section============-->
+    
+    <div id="top-add">
+      <img
+        src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1621533035_Hom_title_web.jpg"
+        alt=""
+      />
+    </div>
+    <div id="container">
+      <div class="clearfix">
+        <div class="home-shopby-category">
+          <h2>EXPLORE</h2>
+          <span>Popular Categories</span> <br />
+          <p>Get Best Deals On Wellness Products</p>
+        </div>
+        <div class="product">
+          <div>
+            <img
+              src="https://www.netmeds.com/images/category/3055/thumb/covid-essentials_0.jpg"
+              alt=""
+            />
+            <span>Covid Essential</span>
+          </div>
+          <div>
+            <img
+              src="https://www.netmeds.com/images/category/3328/thumb/diabetes_0.jpg"
+              alt=""
+            />
+            <span>Diabetes</span>
+          </div>
+          <div>
+            <img
+              src="https://www.netmeds.com/images/category/491/thumb/homeopathy_0.jpg"
+              alt=""
+            />
+            <span>Homeopathy</span>
+          </div>
+          <div>
+            <img
+              src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_0.jpg"
+              alt=""
+            />
+            <span>Ayurvedic</span>
+          </div>
+          <div>
+            <img
+              src="https://www.netmeds.com/images/category/3222/thumb/vitamins_and_supplements_0.jpg"
+              alt=""
+            />
+            <span>Vitamins</span>
+          </div>
+          <div>
+            <img
+              src="https://www.netmeds.com/images/category/3086/thumb/baby_care_0.jpg"
+              alt=""
+            />
+            <span>Baby Care</span>
+          </div>
+          <div>
+            <img
+              src="https://www.netmeds.com/images/category/3087/thumb/feminine_hygeine_0.jpg"
+              alt=""
+            />
+            <span>Feminine Hygiene</span>
+          </div>
+          <div>
+            <img
+              src="https://www.netmeds.com/images/category/535/thumb/face_care.jpg"
+              alt=""
+            />
+            <span>Face Care</span>
+          </div>
+          <div>
+            <img
+              src="https://www.netmeds.com/images/category/3210/thumb/weight_management_0.jpg"
+              alt=""
+            />
+            <span>Weight Management</span>
+          </div>
+        </div>
+      </div>
+
+<!--==========Second - Section============-->
+
+      <div class="clearfix-1">
+        <div class="home-shopby-category">
+          <h2>TODAY'S EXCLUSIVE</h2>
+          <span>Lightning Deals</span> <br />
+          <p>Grab Before The Deal Ends</p>
+        </div>
+        <div class="product1">
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/413011/pankajakasthuri_orthoherb_tablet_60_s_0.jpg"
+              alt=""/>
+              <button class="discount">18% OFF</button>
+              <h4>Pankajakasthuri Orthoherb Tablet 60's</h4>
+              <p>Mfr: Pankajakasthuri Her..</p>
+              <span><del>Rs.250.00</del>  <strong>Rs.205.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/38061/b_protin_nutritional_powder_supplement_chocolate_500_gm_0.jpg"
+              alt=""/>
+              <button class="discount">18% OFF</button>
+              <h4>B-Protin Nutritional Powder Supplement</h4>
+              <p>Mfr: British Biologicals</p>
+              <span><del>Rs.525.00</del>  <strong>Rs.430.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/15580/accu_chek_active_test_strips_50s_0_1.jpg"
+              alt=""/>
+              <button class="discount">17% OFF</button>
+              <h4>Accu-Chek Active Test Strips 50's</h4>
+              <p>Mfr: Roche Diabetes Care</p>
+              <span><del>Rs.975.00</del>  <strong>Rs.809.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/853021/ducray_anaphase_anti_hair_loss_complement_shampoo_100_ml_0_3.jpg"
+              alt=""/>
+              <button class="discount">18% OFF</button>
+              <h4>Ducray Anaphase+ Anti-Hair Loss Complement</h4>
+              <p>Mfr: Abbott Healthcare</p>
+              <span><del>Rs.790.00</del>  <strong>Rs.647.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/600x600/363064/i_know_ovulation_strip_0_1.jpg"
+              alt=""/>
+              <button class="discount">15% OFF</button>
+              <h4>I Know Ovulation Strip</h4>
+              <p>Mfr: Piramal Healthcare</p>
+              <span><del>Rs.549.00</del>  <strong>Rs.446.65</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/600x600/412270/manforce_stay_long_gel_8_gm_0_1.jpg"
+              alt=""/>
+              <button class="discount">5% OFF</button>
+              <h4>Manforce Stay Long Gel 8 gm</h4>
+              <p>Mfr: Mankind Pharma</p>
+              <span><del>Rs.100.00</del>  <strong>Rs.95.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/600x600/14608/nestle_peptamen_peptide_based_diet_powder_vanilla_flavour_400_gm_tin_0_1.jpg"
+              alt=""/>
+              <button class="discount">3% OFF</button>
+              <h4>Nestle Peptamen Peptide Based Diet Powder</h4>
+              <p>Mfr: Nestlé India Ltd</p>
+              <span><del>Rs.1399.00</del>  <strong>Rs.1357.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+        </div>
+        <button id="slide-btn" class="material-icons left">&#10094; </button>
+        <button id="slide-btn" class="material-icons right">&#10095; </button>
+
+        <!-- <i class="material-icons left">&#10094;</i> -->
+        <!-- <i class="material-icons right">&#10095;</i> -->
+      </div>
+
+<!--==========Third Section============-->
+
+      <div class="clearfix-1">
+        <div class="home-shopby-category">
+          <h2>BEST SELLERS</h2>
+          <span>Covid Essentials</span> <br />
+        </div>
+        <div class="product1">
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/902221/sahyog_wellness_multi_function_non_contact_body_object_infrared_thermometer_0_1.jpg"
+              alt=""/>
+              <button class="discount">39% OFF</button>
+              <h4>Sahyog Wellness Multi Function Non-Contact</h4>
+              <p>Mfr: Sahyog Wellness</p>
+              <span><del>Rs.2499.00</del>  <strong>Rs.1524.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/916195/floh_sharp_hand_sanitizer_with_70_alcohol_spearmint_essential_oil_750_ml_0_0.jpg"
+              alt=""/>
+              <button class="discount">60% OFF</button>
+              <h4>Floh Sharp Hand Sanitizer with 70% ..</h4>
+              <p>Mfr: Sharp Mint Limited</p>
+              <span><del>Rs.375.00</del>  <strong>Rs.150.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/600x600/931469/ufs_protects_protective_n95_mask_usp2500_0_0.jpg"
+              alt=""/>
+              <button class="discount">30% OFF</button>
+              <h4>UFS Protects Protective N95 Mask</h4>
+              <p>Mfr: Eliph Nutrition Pvt..</p>
+              <span><del>Rs.199.00</del>  <strong>Rs.139.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/923264/indiklin_n95_face_mask_with_respirator_pack_of_2_0_1.jpg"
+              alt=""/>
+              <button class="discount">61% OFF</button>
+              <h4>Indiklin N95 Face Mask with Respirator (Pack..)</h4>
+              <p>Mfr: Abbott Healthcare</p>
+              <span><del>Rs.790.00</del>  <strong>Rs.347.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/923264/indiklin_n95_face_mask_with_respirator_pack_of_2_0_1.jpg"
+              alt=""/>
+              <button class="discount">15% OFF</button>
+              <h4>Indiklin N95 Face Mask with Respirator (Pack..)</h4>
+              <p>Mfr: Piramal Healthcare</p>
+              <span><del>Rs.549.00</del>  <strong>Rs.446.65</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/923264/indiklin_n95_face_mask_with_respirator_pack_of_2_0_1.jpg"
+              alt=""/>
+              <button class="discount">5% OFF</button>
+              <h4>Manforce Stay Long Gel 8 gm</h4>
+              <p>Mfr: Mankind Pharma</p>
+              <span><del>Rs.100.00</del>  <strong>Rs.95.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/923255/indiklin_premium_hand_sanitizer_gel_lemongrass_500_ml_0_0.jpg"
+              alt=""/>
+              <button class="discount">3% OFF</button>
+              <h4>Indiklin Premium Hand Sanitizer Gel</h4>
+              <p>Mfr: RAS Herbal</p>
+              <span><del>Rs.150.00</del>  <strong>Rs.127.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+        </div>
+                <button id="slide-btn" class="material-icons lft">&#10094; </button>
+                <button id="slide-btn" class="material-icons rgt">&#10095; </button>
+
+      </div>
+
+
+<!--==========Forth Section  ============-->
+
+      
+      <div class="clearfix-1">
+        <div class="home-shopby-category">
+          <h2>EXPLORE</h2>
+          <span>Multi Vitamins</span> <br />
+        </div>
+        <div class="product1">
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/907322/purefoods_vitamin_c_tablet_60s_0_4.jpg"
+              alt=""/>
+              <button class="discount">30% OFF</button>
+              <h4>PureFoods Vitamin C Tablet 60's</h4>
+              <p>Mfr: Purefoods</p>
+              <span><del>Rs.425.00</del>  <strong>Rs.297.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/907320/purefoods_vitamin_d3_5000_iu_tablet_60s_0_1.jpg"
+              alt=""/>
+              <button class="discount">30% OFF</button>
+              <h4>PureFoods Vitamin D3 5000 IU Tablet 60's</h4>
+              <p>Mfr: Purefoods</p>
+              <span><del>Rs.550.00</del>  <strong>Rs.385.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/922866/cf_vitamin_c_veg_tablet_120s_0_1.jpg"
+              alt=""/>
+              <button class="discount">55% OFF</button>
+              <h4>CF Vitamin C Veg Tablet 120's</h4>
+              <p>Mfr: Novus Life Sciences</p>
+              <span><del>Rs.1125.00</del>  <strong>Rs.499.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/915362/bonayu_vitamin_c_mouth_dissolving_strip_90s_0_1.jpg"
+              alt=""/>
+              <button class="discount">8% OFF</button>
+              <h4>BonAyu Vitamin C Mouth Dissolving Strip 90's</h4>
+              <p>Mfr: Bonayu Lifesciences</p>
+              <span><del>Rs.550.00</del>  <strong>Rs.506.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/858136/inlife_vitamin_b12_tablets_60_s_0.jpg"
+              alt=""/>
+              <button class="discount">15% OFF</button>
+              <h4>INLIFE Vitamin B12 Tablets 60's</h4>
+              <p>Mfr: Inlife Pharma</p>
+              <span><del>Rs.600.00</del>  <strong>Rs.420.65</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/907321/purefoods_vitamin_d3_2000_iu_tablet_60s_0_1.jpg"
+              alt=""/>
+              <button class="discount">5% OFF</button>
+              <h4>PureFoods Vitamin D3 2000 IU Tablet 60's</h4>
+              <p>Mfr: Purefoods</p>
+              <span><del>Rs.475.00</del>  <strong>Rs.325.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/858167/inlife_vitamin_d3_2000_iu_capsules_60_s_0.jpg"
+              alt=""/>
+              <button class="discount">3% OFF</button>
+              <h4>INLIFE Vitamin D3 2000 IU Capsules 60's</h4>
+              <p>Mfr: Inlife Pharma</p>
+              <span><del>Rs.599.00</del>  <strong>Rs.365.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+        </div>
+                <button id="slide-btn" class="material-icons lt">&#10094; </button>
+                <button id="slide-btn" class="material-icons rt">&#10095; </button>
+
+      </div>
+<!--================= Fifth Section ================-->
+
+      <div class="clearfix-1">
+        <div class="home-shopby-category">
+          <h2>BEST SELLERS</h2>
+          <span>Face Washes</span> <br />
+          <!-- <small>Get Best Deals On Wellness Products</small> -->
+        </div>
+        <div class="product1">
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/410764/eau_thermale_avene_cleanance_cleansing_gel_200_ml_0_1.jpg"
+              alt=""/>
+              <!-- <button class="discount">30% OFF</button> -->
+              <h4>Avene Cleanance Cleansing Gel 200 ml</h4>
+              <p>Mfr: Abbott Healthcare Pvt.</p>
+              <span><del></del>  <strong>Rs.1510.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/412194/bioderma_sebium_gel_moussant_200_ml_0.jpg"
+              alt=""/>
+              <!-- <button class="discount">30% OFF</button> -->
+              <h4>Bioderma Sebium Gel Moussant 200 ml</h4>
+              <p>Mfr: Naos Skin Care India</p>
+              <span><del></del>  <strong>Rs.1575.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/411655/bioderma_sebium_gel_moussant_100_ml_0.jpg"
+              alt=""/>
+              <!-- <button class="discount">55% OFF</button> -->
+              <h4>Bioderma Sebium Gel Moussant 100 ml</h4>
+              <p>Mfr: Naos Skin Care India</p>
+              <span><del></del>  <strong>Rs.4840.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/600x600/889428/aroma_magic_face_wash_neem_tea_tree_100_ml_0.jpg"
+              alt=""/>
+              <button class="discount">10% OFF</button>
+              <h4>Aroma Magic Face Wash</h4>
+              <p>Mfr: Blossom Kochhar Beauty</p>
+              <span><del>Rs.170.00</del>  <strong>Rs.153.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/600x600/825535/avene_cleanance_cleansing_gel_100ml_0_2.jpg"
+              alt=""/>
+              <!-- <button class="discount">15% OFF</button> -->
+              <h4>Avene Cleanance Cleansing Gel 100 ml</h4>
+              <p>Mfr: Abbott Healthcare</p>
+              <span><del></del>  <strong>Rs.870.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/600x600/410748/eau_thermale_avene_thermal_water_150_ml_0_1.jpg"
+              alt=""/>
+              <!-- <button class="discount">5% OFF</button> -->
+              <h4>Avene Thermal Spring Water 150 ml</h4>
+              <p>Mfr: Abbott Healthcare</p>
+              <span><del></del>  <strong>Rs.1325.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+          <div class="item">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/100120/neutrogena_extra_gentle_cleanser_200_ml_0.jpg"
+              alt=""/>
+              <!-- <button class="discount">3% OFF</button> -->
+              <h4>Neutrogena Extra Gentle Cleanser 200 ml</h4>
+              <p>Mfr: Johnson & Johnson</p>
+              <span><del></del>  <strong>Rs.600.00</strong></span>
+              <button id="btn">ADD TO CART</button>
+          </div>
+        </div>
+                <button id="slide-btn" class="material-icons le-ft">&#10094; </button>
+                <button id="slide-btn" class="material-icons ri-ght">&#10095; </button>
+
+      </div>
+
+<!--====== sixth section  ======-->
+
+      <div class="clearfix-2">
+        <div class="home-shopby-category">
+        <h2>Explore By</h2> <br />
+          <span>Health Concerns</span>
+          <p>Search products according to your health problems</p>
+        </div>
+        <div class="product2">
+          <div class="item-1">
+            <img
+              src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/diabetic-care.png"
+              alt=""/>
+              <div class="text">
+                  <h4>Diabetic care</h4>
+                  <span>SHOP NOW</span>
+              </div>
+          </div>
+          <div class="item-1">
+            <img
+              src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/liver-care.png"
+              alt=""/>
+              <div class="text">
+                  <h4>Liver care</h4>
+                  <span>SHOP NOW</span>
+              </div>
+          </div>
+          <div class="item-1">
+            <img
+              src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/stomach-care.png"
+              alt=""/>
+              <div class="text">
+                  <h4>Stomach care</h4>
+                  <span>SHOP NOW</span>
+              </div>
+          </div>
+          <div class="item-1">
+            <img
+              src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/de-addiction.png"
+              alt=""/>
+              <div class="text">
+                  <h4>De-Addiction</h4>
+                  <span>SHOP NOW</span>
+              </div>
+          </div>
+          <div class="item-1">
+            <img
+              src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/kidney-care.png"
+              alt=""/>
+              <div class="text">
+                  <h4>Kidney care</h4>
+                  <span>SHOP NOW</span>
+              </div>
+          </div>
+          <div class="item-1">
+            <img
+              src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/lung-care.png"
+              alt=""/>
+              <div class="text">
+                  <h4>Lung Care</h4>
+                  <span>SHOP NOW</span>
+              </div>
+          </div>
+          <div class="item-1">
+            <img
+              src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/piles-care.png"
+              alt=""/>
+              <div class="text">
+                  <h4>Piles care</h4>
+                  <span>SHOP NOW</span>
+              </div>
+          </div>
+          <div class="item-1">
+            <img
+              src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/mental-care.png"
+              alt=""/>
+              <div class="text">
+                  <h4>Mental Care</h4>
+                  <span>SHOP NOW</span>
+              </div>
+          </div>
+        </div>
+      </div>
+                <button id="slide-btn" class="material-icons left-card">&#10094; </button>
+                <button id="slide-btn" class="material-icons right-card">&#10095; </button>
+
+    </div>
+  </body>
+</html>
