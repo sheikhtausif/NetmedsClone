@@ -1,0 +1,107 @@
+body {
+  background-color: #f3f3f3;
+}
+
+/**==============================================
+ * *                   Category CSS
+ =============================================*/
+#Category {
+  width: 250px;
+  font-size: 20px;
+  color: #6f7284;
+  line-height: 1.6em;
+  padding-left: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#Category summary {
+  letter-spacing: 0.5px;
+  width: 200px;
+  padding: 5px 0 10px 10px;
+  border-bottom: 1px solid rgb(21, 27, 57, 0.09);
+  cursor: pointer;
+}
+
+#Category p {
+  letter-spacing: 0.5px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1em;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+#Category p:nth-last-child(1) {
+  border-bottom: 1px solid rgb(21, 27, 57, 0.09);
+  padding: 5px 0 15px 25px;
+}
+
+#Category > h2 {
+  width: 200px;
+  padding: 10px 0 10px 15px;
+  margin: 10px 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(21, 27, 57, 0.09);
+  color: black;
+}
+
+/**==============================================
+ * *                   Filter CSS
+ =============================================*/
+#filter {
+  width: 250px;
+  font-size: 20px;
+  color: #6f7284;
+  line-height: 1.6em;
+  padding-left: 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#filter span {
+  font-size: 24px;
+  color: black;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  border-bottom: 1px solid rgb(21, 27, 57, 0.09);
+}
+
+input {
+  border: 1px solid red;
+  /* height: 30px; */
+  border-bottom: 1px solid rgb(21, 27, 57, 0.1);
+  margin-left: 10px;
+  overflow: hidden;
+  line-height: 1.3em;
+}
+
+#search {
+  width: 180px;
+  height: 30px;
+  border: none;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin: 5px 0 15px 10px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+#filter label {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+  letter-spacing: 0.2px;
+}
+
+#filter-Manufacture {
+  height: 250px;
+  overflow: hidden auto;
+}
+
+#filter-brand {
+  height: 250px;
+  overflow: hidden auto;
+}
