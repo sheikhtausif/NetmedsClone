@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="CSS/navBar.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <title>Netmeds.com: Indian Online Pharmacy | Buy Medicines Online, Fast Delivery</title>
 </head>
 
@@ -14,11 +15,26 @@
     <div class="navBar">
         <header class="pageHead">
             <div class="pageWrap logo"><a href="#"><img
-                        src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds.svg" alt="Logo"></a></div>
+                        src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds.svg" alt="Logo"></a>
+            </div>
             <div class="searchDiv">
-                <div class="deliveryBox"></div>
-                <div class="searchBox"></div>
-                <div class="btnBox"></div>
+                <div class="deliveryBox">
+                    <img src="/Images/location.png" alt="">
+                    <div>
+                        <p>Delivering to</p>
+                        <div>
+                            <h4 id="editH4" min="1" max="6">110001</h4>
+                            <!--  <input type="number" value="110001" id="inpEdit" min="1" max="6"> -->
+                            <button id="penEdit"><img src="/Images/pen.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchBox">
+                    <input type="search" placeholder="Search for medicine & wellness product...">
+                </div>
+                <div class="btnBox">
+                    <button><img src="/Images/searchBtn.png" alt=""></button>
+                </div>
             </div>
             <div class="uploadDiv">UPLOAD</div>
             <div class="cartIconDiv invert"><img src="/Images/cartIcon.png" alt="Cart Bag"></div>
@@ -51,7 +67,7 @@
                         <small>Trending tips from health expert</small>
                     </a>
                     <ul class="subNav">
-                        <li><a href="#">Health Libray</a></li>
+                        <li><a href="#">Health Library</a></li>
                         <li><a href="#">PatientAlike</a></li>
                         <li><a href="#">Corona Awareness</a></li>
                     </ul>
@@ -79,6 +95,14 @@
     <section class="sec-1">
 
     </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="firstDiv">
+
+        </div>
+    </footer>
 </body>
+<script src="/JS/nav.js"></script>
 
 </html>
