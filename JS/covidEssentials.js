@@ -19,6 +19,10 @@ setInterval(function () {
   i++;
 }, 3000);
 
+/**=======================
+ * !      Product division 1
+ *========================**/
+
 const object = [
   {
     disc: `5% OFF`,
@@ -129,3 +133,149 @@ function printProduct(elem) {
   second.innerHTML = res;
 }
 printProduct(data);
+
+/**=======================
+ * !      product division 2
+ *========================**/
+
+const obj = [
+  {
+    disc: `0% OFF`,
+    image: `https://www.netmeds.com/images/product-v1/150x150/907575/cura_hand_sanitizer_200_ml_0_0.jpg`,
+    name: `Cura Hand Sanitizer 200 ml`,
+    mfr: ` CURA PHARMACEUTICALS`,
+    price1: ``,
+    price2: 100,
+  },
+
+  {
+    disc: `0% OFF`,
+    image: `https://www.netmeds.com/images/product-v1/150x150/313682/dabur_chyawanprash_1_kg_0.jpg`,
+    name: `Dabur Chyawanprash Awaleha 1kg`,
+    mfr: ` Dabur India Ltd`,
+    price1: ``,
+    price2: 349,
+  },
+
+  {
+    disc: `40% OFF`,
+    image: `https://www.netmeds.com/images/product-v1/150x150/858522/inlife_ashwagandha_ghan_capsules_60_s_0.jpg`,
+    name: `INLIFE Ashwagandha Ghan Capsules 60's`,
+    mfr: ` Inlife Pharma Private Limited`,
+    price1: `Rs. 499`,
+    price2: 299.4,
+  },
+
+  {
+    disc: `0% OFF`,
+    image: `https://www.netmeds.com/images/product-v1/150x150/406030/patanjali_honey_1_kg_0.jpg`,
+    name: `Patanjali Honey 1 kg`,
+    mfr: ` Patanjali Ayurved Ltd`,
+    price1: ``,
+    price2: 315,
+  },
+
+  {
+    disc: `40% OFF`,
+    image: `https://www.netmeds.com/images/product-v1/150x150/907849/sannap_hand_sanitizer_lemon_fragrance_500_ml_0_0.jpg`,
+    name: `SanNap Hand Sanitizer - Lemon Fragrance 500 ml`,
+    mfr: `San Nap Healthcare`,
+    price1: `Rs. 250`,
+    price2: 150,
+  },
+
+  {
+    disc: `10% OFF`,
+    image: `https://www.netmeds.com/images/product-v1/150x150/909963/wildcraft_hypashield_w95_reusable_outdoor_protection_face_mask_0_0.jpg`,
+    name: `Wildcraft Hypashield W95 Reusable Outdoor Protection`,
+    mfr: ` Wildcraft India Pvt Ltd`,
+    price1: `Rs. 200`,
+    price2: 180,
+  },
+
+  {
+    disc: `20% OFF`,
+    image: `https://www.netmeds.com/images/product-v1/150x150/910015/floh_anti_bacterial_face_mask_kn95_20s_0_0.jpg`,
+    name: `Floh Anti Bacterial Face Mask - K N95 (Pack of 20)`,
+    mfr: ` Huizhou Green Communication`,
+    price1: `Rs. 5000`,
+    price2: 4000,
+  },
+
+  {
+    disc: `0% OFF`,
+    image: `https://www.netmeds.com/images/product-v1/150x150/15129/dettol_hand_sanitizer_original_50_ml_0.jpg`,
+    name: `Dettol Instant Hand Sanitizer - Original 50 ml`,
+    mfr: `Reckitt Benckiser India Ltd`,
+    price1: ``,
+    price2: 25,
+  },
+
+  {
+    disc: `10% OFF`,
+    image: `https://www.netmeds.com/images/product-v1/150x150/908052/soft_hands_non_sterile_latex_medical_examination_gloves_s_100s_0_0.jpg`,
+    name: `Soft Hands Non Sterile Latex Medical Examination Gloves (S)`,
+    mfr: ` Medipride`,
+    price1: `Rs. 1220.00`,
+    price2: 1098.0,
+  },
+
+  {
+    disc: `0% OFF`,
+    image: `https://www.netmeds.com/images/product-v1/150x150/840552/dabur_honey_1_kg_0_2.jpg`,
+    name: `Dabur Honey 1 kg`,
+    mfr: `Dabur India Ltd`,
+    price1: ``,
+    price2: 430,
+  },
+
+  {
+    disc: `71% OFF`,
+    image: `https://www.netmeds.com/images/product-v1/150x150/908302/canyearn_medical_infrared_thermometer_0_0.jpg`,
+    name: `Canyearn Medical Infrared Thermometer`,
+    mfr: `Canyearn`,
+    price1: `Rs. 14,500.00`,
+    price2: 4205,
+  },
+
+  {
+    disc: `42% OFF`,
+    image: `https://www.netmeds.com/images/product-v1/150x150/902221/sahyog_wellness_multi_function_non_contact_body_object_infrared_thermometer_0_1.jpg`,
+    name: `Sahyog Wellness Multi Function Non-Contact Body & Object`,
+    mfr: ` Sahyog Wellness`,
+    price1: `Rs. 2,499`,
+    price2: 1449.42,
+  },
+];
+
+if (localStorage.getItem("moreProducts") == null) {
+  localStorage.setItem("moreProducts", JSON.stringify(obj));
+}
+let information = JSON.parse(localStorage.getItem("moreProducts"));
+let inner = document.getElementById("inner");
+
+console.log(inner);
+
+function printProduct2(element) {
+  let result = "";
+  for (item in element) {
+    let el = element[item];
+    result += `
+        <div id="productCardCss2">
+        <div class="discount"><span class="disc">${el.disc}</span></div>
+    <div class="posterDivCss">
+        <img src=${el.image}>
+    </div>
+    <div class="textDivCss">
+        <p class="p1Css">${el.name}</p>
+        <p class="p1Css"><i>Mfr: ${el.mfr}</i></p>
+        <p class="p1Css"> <del>${el.price1}</del> <strong>Rs. ${el.price2}</strong></p>
+        <button>ADD TO CART</button>
+    </div>
+</div>
+        `;
+  }
+
+  inner.innerHTML = result;
+}
+printProduct2(information);
