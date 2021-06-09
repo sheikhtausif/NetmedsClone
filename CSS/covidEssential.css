@@ -302,3 +302,36 @@ strong {
   color: red;
   font-size: 19px;
 }
+
+/**=======================
+ * !      Product division 2
+ *  below information
+ *========================**/
+
+#products2 {
+  width: 98%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  margin: 0px auto 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#inner {
+  width: 98%;
+  /* height: 900px; */
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  padding: 1%;
+  gap: 1.2%;
+  /* border: 1px solid black; */
+  margin: 0px auto;
+  background-color: white;
+}
+
+#productCardCss2 {
+  height: 340px;
+  border-radius: 10px;
+  /* margin: 10px; */
+  border: 1px solid rgba(112, 112, 112, 0.38);
+}
