@@ -10,7 +10,6 @@ penEdit.addEventListener('click', function () {
 
     // Creates object for selection
     var set = window.getSelection();
-    console.log('set:', set)
 
     // Set start position of range
     setPos.setStart(editH4.childNodes[0], 6);
