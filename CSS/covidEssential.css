@@ -193,6 +193,46 @@ span {
 }
 
 /**=======================
+ * !      Sorting division
+ *========================**/
+
+#sortingDiv {
+  width: 98%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  align-items: flex-end;
+  font-size: 20px;
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.sortbtn {
+  width: 100px;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 7px;
+  background-color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.sortbtn:nth-child(1) {
+  border: 1px solid rgb(36, 174, 177);
+  color: rgb(36, 174, 177);
+}
+
+.sortbtn:hover {
+  border: 1px solid rgb(36, 174, 177);
+  color: rgb(36, 174, 177);
+}
+
+/**=======================
  * !      Products division
  *========================**/
 
@@ -287,7 +327,7 @@ del {
   color: #6f7284;
 }
 
-button {
+.textDivCss > button {
   width: 95%;
   padding: 10px;
   margin-top: 5px;
