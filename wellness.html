@@ -5,283 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wellness</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-
-      #top-add,
-      img {
-        width: 98vw;
-        margin: auto;
-      }
-      body {
-        background-color: #dae2e1;
-      }
-      #container {
-        width: 98vw;
-        /* height: 250px; */
-        margin: auto;
-      }
-/**=======================
- * *       First section
- *========================**/
-      .clearfix {
-        height: 320px;
-        border-radius: 10px;
-        background-color: white;
-        margin-bottom: 20px;
-      }
-      .home-shopby-category {
-        height: 80px;
-        padding-left: 20px;
-      }
-      .home-shopby-category h2 {
-        font-size: 16px;
-        letter-spacing: 1px;
-        padding-left: 10px;
-        padding-top: 10px;
-        text-align: left;
-        line-height: 19.5px;
-        color: #6f7284;
-      }
-      .home-shopby-category span {
-        font-size: 20px;
-        letter-spacing: 1px;
-        padding: 0 0;
-      }
-      .home-shopby-category p {
-        font-size: 14px;
-        padding-left: 0;
-
-        line-height: 2em;
-        color: #6f7284;
-      }
-      .product {
-        height: 250px;
-        display: flex;
-        overflow: scroll;
-        position: relative;
-      }
-/**=======================
- * *    First Section Arrow
- *========================**/   
-      /* arrow */
-      .left{
-        position: absolute;
-        bottom:-10px;
-        left:25px
-      }
-      .right{
-        position: absolute;
-        bottom:-10px;
-        left: 1380px;
-      }
-      .product > div {
-        width: 150px;
-        height: 175px;
-        text-align: center;
-        margin: 30px 45px;
-      }
-      .product img {
-        width: 150px;
-        height: 160px;
-        border: 1px solid #bbbbbd;
-        border-radius: 5px;
-      }
-/**=======================
- * *       Section Section
- *========================**/      
-      .clearfix-1{
-        height: 450px;
-        border-radius: 10px;
-        background-color: white;
-        margin-bottom: 20px;
-      }
-      .product1{
-         height: 350px;
-        display: flex;
-        overflow: scroll;  
-        margin-top: 20px;
-        position: relative;
-      }
-/**======================
- *!    All Section Arrow
- *========================**/      
-      /* arrow */
-      .lft{
-        position: absolute;
-        bottom:-480px;
-        left:25px
-
-      }
-      .rgt{
-        position: absolute;
-        bottom:-480px;
-        left: 1380px;
-      }
-      /* arrow */
-      .lt{
-        position: absolute;
-        bottom:-950px;
-        left:25px
-        
-      }
-      .rt{
-        position: absolute;
-        bottom:-950px;
-        left: 1380px;
-      }
-      /* arrow */
-      .le-ft{
-        position: absolute;
-        bottom:-1410px;
-        left:25px
-      }
-      .ri-ght{
-        position: absolute;
-        bottom:-1410px;
-        left: 1380px;
-
-      }
-      /* arrow */
-      .left-card{
-        position: absolute;
-        bottom:-1850px;
-        left:20px;
-      }
-      .right-card{
-        position: absolute;
-        bottom:-1850px;
-        left: 1385px;
-
-      }
-
-      #slide-btn{
-            width: 30px;
-            padding-bottom: 8px;
-            border-radius: 50%;
-            color: white;
-            border-color: white;
-            border: none;
-      }
-        .product1 img {
-        width: 70%;
-        height: 150px;
-        border-radius: 5px;
-        border-radius: 10px;
-        padding-top:10px;
-        margin-left: 32px;
-        cursor: pointer;
-      }
-      .item{
-          width: 220px;
-          height: 330px;
-          border: 1px solid #dae2e1;
-          border-radius: 10px;
-          /* margin: 0  60px; */
-          margin-right: 30px;
-          margin-left: 30px;
-
-        position: relative;
-      }
-      .item h4,p,span{
-            margin: 0 10px;
-            padding-bottom: 10px;
-            padding-left: 20px;
-            cursor: pointer;
-
-
-      }
-      del{
-          color:#bbbbbd ;
-      }
-      #btn{
-          background-color: #34aeb2;
-          color: white;
-          border: none;
-          width: 160px;
-          height: 40px;
-          margin: 10px 30px 10px 30px;
-          border-radius: 5px;
-          cursor: pointer;
-      }
-      strong{
-          font-size: 20px;
-          color:#fb2855;
-          cursor: default;
-      }
-      .discount{
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        color: white;
-        border: none;
-        background-color: #86be52;
-        border-radius: 2px;
-      }
-/**=======================
- * *       Sixth section
- *========================**/      
-        .clearfix-2{
-        height: 350px;
-        border-radius: 10px;
-        background-color: white;
-      }
-        .product2{
-         height: 270px;
-        display: flex;
-        overflow: scroll;
-      }
-        .product2 img {
-        width: 100%;
-        height: 200px;
-        border-radius: 5px;
-      }
-        .item-1{
-        min-width: 270px;
-        height: 200px;
-        border-radius: 10px;
-        /* margin: 35px  20px;
-         */
-         margin-top:35px;
-         margin-left: 50px;
-         margin-right: 20px;
-        position: relative;
-        border:1px solid red
-      }
-
-      .item-1:nth-child(1){
-        background-color:rgb(255, 243, 235) ;
-      }
-      .item-1:nth-child(2){
-        background-color:#F6FAE8 ;
-      }
-      .item-1:nth-child(3){
-        background-color:#EBFEFC ;
-      }
-      .item-1:nth-child(4){
-        background-color:#EAF9FF ;
-      }
-      .text{
-        width: 150px;
-        height: 100px;
-        position: absolute;
-        top: 10px;
-        font-size: 18px;
-        cursor: pointer;
-      }
-      .text>span{
-          color: #34aeb2;
-      }
-      .text>h4{
-          padding-left: 30px;
-      }
-
-
-    </style>
+    <link rel="stylesheet" href="/CSS/wellness.css">
   </head>
   <body>
-
-
 <!--==========First-Section============-->
     
     <div id="top-add">
@@ -381,7 +107,7 @@
               <h4>Pankajakasthuri Orthoherb Tablet 60's</h4>
               <p>Mfr: Pankajakasthuri Her..</p>
               <span><del>Rs.250.00</del>  <strong>Rs.205.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -391,7 +117,7 @@
               <h4>B-Protin Nutritional Powder Supplement</h4>
               <p>Mfr: British Biologicals</p>
               <span><del>Rs.525.00</del>  <strong>Rs.430.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -401,7 +127,7 @@
               <h4>Accu-Chek Active Test Strips 50's</h4>
               <p>Mfr: Roche Diabetes Care</p>
               <span><del>Rs.975.00</del>  <strong>Rs.809.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -411,7 +137,7 @@
               <h4>Ducray Anaphase+ Anti-Hair Loss Complement</h4>
               <p>Mfr: Abbott Healthcare</p>
               <span><del>Rs.790.00</del>  <strong>Rs.647.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -421,7 +147,7 @@
               <h4>I Know Ovulation Strip</h4>
               <p>Mfr: Piramal Healthcare</p>
               <span><del>Rs.549.00</del>  <strong>Rs.446.65</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -431,7 +157,7 @@
               <h4>Manforce Stay Long Gel 8 gm</h4>
               <p>Mfr: Mankind Pharma</p>
               <span><del>Rs.100.00</del>  <strong>Rs.95.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -441,7 +167,7 @@
               <h4>Nestle Peptamen Peptide Based Diet Powder</h4>
               <p>Mfr: Nestlé India Ltd</p>
               <span><del>Rs.1399.00</del>  <strong>Rs.1357.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
         </div>
         <button id="slide-btn" class="material-icons left">&#10094; </button>
@@ -467,7 +193,7 @@
               <h4>Sahyog Wellness Multi Function Non-Contact</h4>
               <p>Mfr: Sahyog Wellness</p>
               <span><del>Rs.2499.00</del>  <strong>Rs.1524.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -477,7 +203,7 @@
               <h4>Floh Sharp Hand Sanitizer with 70% ..</h4>
               <p>Mfr: Sharp Mint Limited</p>
               <span><del>Rs.375.00</del>  <strong>Rs.150.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -487,7 +213,7 @@
               <h4>UFS Protects Protective N95 Mask</h4>
               <p>Mfr: Eliph Nutrition Pvt..</p>
               <span><del>Rs.199.00</del>  <strong>Rs.139.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -497,7 +223,7 @@
               <h4>Indiklin N95 Face Mask with Respirator (Pack..)</h4>
               <p>Mfr: Abbott Healthcare</p>
               <span><del>Rs.790.00</del>  <strong>Rs.347.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -507,7 +233,7 @@
               <h4>Indiklin N95 Face Mask with Respirator (Pack..)</h4>
               <p>Mfr: Piramal Healthcare</p>
               <span><del>Rs.549.00</del>  <strong>Rs.446.65</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -517,7 +243,7 @@
               <h4>Manforce Stay Long Gel 8 gm</h4>
               <p>Mfr: Mankind Pharma</p>
               <span><del>Rs.100.00</del>  <strong>Rs.95.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -527,7 +253,7 @@
               <h4>Indiklin Premium Hand Sanitizer Gel</h4>
               <p>Mfr: RAS Herbal</p>
               <span><del>Rs.150.00</del>  <strong>Rs.127.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
         </div>
                 <button id="slide-btn" class="material-icons lft">&#10094; </button>
@@ -553,7 +279,7 @@
               <h4>PureFoods Vitamin C Tablet 60's</h4>
               <p>Mfr: Purefoods</p>
               <span><del>Rs.425.00</del>  <strong>Rs.297.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -563,7 +289,7 @@
               <h4>PureFoods Vitamin D3 5000 IU Tablet 60's</h4>
               <p>Mfr: Purefoods</p>
               <span><del>Rs.550.00</del>  <strong>Rs.385.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -573,7 +299,7 @@
               <h4>CF Vitamin C Veg Tablet 120's</h4>
               <p>Mfr: Novus Life Sciences</p>
               <span><del>Rs.1125.00</del>  <strong>Rs.499.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -583,7 +309,7 @@
               <h4>BonAyu Vitamin C Mouth Dissolving Strip 90's</h4>
               <p>Mfr: Bonayu Lifesciences</p>
               <span><del>Rs.550.00</del>  <strong>Rs.506.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -593,7 +319,7 @@
               <h4>INLIFE Vitamin B12 Tablets 60's</h4>
               <p>Mfr: Inlife Pharma</p>
               <span><del>Rs.600.00</del>  <strong>Rs.420.65</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -603,7 +329,7 @@
               <h4>PureFoods Vitamin D3 2000 IU Tablet 60's</h4>
               <p>Mfr: Purefoods</p>
               <span><del>Rs.475.00</del>  <strong>Rs.325.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -613,7 +339,7 @@
               <h4>INLIFE Vitamin D3 2000 IU Capsules 60's</h4>
               <p>Mfr: Inlife Pharma</p>
               <span><del>Rs.599.00</del>  <strong>Rs.365.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
         </div>
                 <button id="slide-btn" class="material-icons lt">&#10094; </button>
@@ -636,8 +362,8 @@
               <!-- <button class="discount">30% OFF</button> -->
               <h4>Avene Cleanance Cleansing Gel 200 ml</h4>
               <p>Mfr: Abbott Healthcare Pvt.</p>
-              <span><del></del>  <strong>Rs.1510.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <span><del>""</del>  <strong>Rs.1510.00</strong></span>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -646,8 +372,8 @@
               <!-- <button class="discount">30% OFF</button> -->
               <h4>Bioderma Sebium Gel Moussant 200 ml</h4>
               <p>Mfr: Naos Skin Care India</p>
-              <span><del></del>  <strong>Rs.1575.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <span><del>""</del>  <strong>Rs.1575.00</strong></span>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -656,8 +382,8 @@
               <!-- <button class="discount">55% OFF</button> -->
               <h4>Bioderma Sebium Gel Moussant 100 ml</h4>
               <p>Mfr: Naos Skin Care India</p>
-              <span><del></del>  <strong>Rs.4840.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <span><del>""</del>  <strong>Rs.4840.00</strong></span>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -667,7 +393,7 @@
               <h4>Aroma Magic Face Wash</h4>
               <p>Mfr: Blossom Kochhar Beauty</p>
               <span><del>Rs.170.00</del>  <strong>Rs.153.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -676,8 +402,8 @@
               <!-- <button class="discount">15% OFF</button> -->
               <h4>Avene Cleanance Cleansing Gel 100 ml</h4>
               <p>Mfr: Abbott Healthcare</p>
-              <span><del></del>  <strong>Rs.870.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <span><del>""</del>  <strong>Rs.870.00</strong></span>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -686,8 +412,8 @@
               <!-- <button class="discount">5% OFF</button> -->
               <h4>Avene Thermal Spring Water 150 ml</h4>
               <p>Mfr: Abbott Healthcare</p>
-              <span><del></del>  <strong>Rs.1325.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <span><del>""</del>  <strong>Rs.1325.00</strong></span>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
           <div class="item">
             <img
@@ -696,8 +422,8 @@
               <!-- <button class="discount">3% OFF</button> -->
               <h4>Neutrogena Extra Gentle Cleanser 200 ml</h4>
               <p>Mfr: Johnson & Johnson</p>
-              <span><del></del>  <strong>Rs.600.00</strong></span>
-              <button id="btn">ADD TO CART</button>
+              <span><del>""</del>  <strong>Rs.600.00</strong></span>
+              <button class="addToCart" id="btn">ADD TO CART</button>
           </div>
         </div>
                 <button id="slide-btn" class="material-icons le-ft">&#10094; </button>
@@ -794,3 +520,4 @@
     </div>
   </body>
 </html>
+<script type="text/javascript" src="JS/wellness.js" ></script>
