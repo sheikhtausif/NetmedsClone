@@ -25,7 +25,7 @@ setInterval(function () {
 
 const object = [
   {
-    disc: `5% OFF`,
+    disc: `${5}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/910016/tri_activ_instant_hand_sanitizer_500_ml_0_1.jpg`,
     name: "Tri-Activ Instant Hand Sanitizer 500 ml",
     mfr: `Piramal Healthcare Ltd`,
@@ -34,7 +34,7 @@ const object = [
   },
 
   {
-    disc: `70% OFF`,
+    disc: `${70}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/912708/floh_instant_hand_sanitizer_with_70_ethyl_alcohol_spearmint_essential_oil_5_litre_0_0.jpg`,
     name: `FLOH Instant Hand Sanitizer with 70% Ethyl Alcohol - Spearmint`,
     mfr: `Sharp Mint Limited`,
@@ -43,7 +43,7 @@ const object = [
   },
 
   {
-    disc: `50% OFF`,
+    disc: `${50}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/909365/cura_home_sanitizer_500_ml_0_0.jpg`,
     name: `Medisales PPE Kit`,
     mfr: `Medisales`,
@@ -52,7 +52,7 @@ const object = [
   },
 
   {
-    disc: `20% OFF`,
+    disc: `${20}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/915684/lama_giloy_ghanbati_tablet_60s_0_0.jpg`,
     name: `Lama Giloy ghanbati Tablet 60's`,
     mfr: `Lama Pharmaceuticals`,
@@ -61,7 +61,7 @@ const object = [
   },
 
   {
-    disc: `0% OFF`,
+    disc: `${0}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/907575/cura_hand_sanitizer_200_ml_0_0.jpg`,
     name: `Cura Hand Sanitizer 200 ml`,
     mfr: `Cura Pharmaceuticals`,
@@ -70,7 +70,7 @@ const object = [
   },
 
   {
-    disc: `0% OFF`,
+    disc: `${0}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/313682/dabur_chyawanprash_1_kg_0.jpg`,
     name: `Dabur Chyawanprash Awaleha 1kg`,
     mfr: `Dabur India Ltd`,
@@ -79,7 +79,7 @@ const object = [
   },
 
   {
-    disc: `40% OFF`,
+    disc: `${40}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/907849/sannap_hand_sanitizer_lemon_fragrance_500_ml_0_0.jpg`,
     name: `SanNap Hand Sanitizer - Lemon Fragrance 500 ml`,
     mfr: `San Nap Healthcare`,
@@ -88,7 +88,7 @@ const object = [
   },
 
   {
-    disc: `20% OFF`,
+    disc: `${20}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/910015/floh_anti_bacterial_face_mask_kn95_20s_0_0.jpg`,
     name: `Floh Anti Bacterial Face Mask - K N95 (Pack of 20)`,
     mfr: ` Huizhou Green Communication`,
@@ -128,8 +128,8 @@ function printProduct(elem) {
     </div>
 </div>
         `;
+    // console.log(typeof +el.disc.split("%")[0]);
   }
-
   second.innerHTML = res;
 }
 printProduct(data);
@@ -140,7 +140,7 @@ printProduct(data);
 
 const obj = [
   {
-    disc: `0% OFF`,
+    disc: `${0}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/907575/cura_hand_sanitizer_200_ml_0_0.jpg`,
     name: `Cura Hand Sanitizer 200 ml`,
     mfr: ` CURA PHARMACEUTICALS`,
@@ -149,7 +149,7 @@ const obj = [
   },
 
   {
-    disc: `0% OFF`,
+    disc: `${0}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/313682/dabur_chyawanprash_1_kg_0.jpg`,
     name: `Dabur Chyawanprash Awaleha 1kg`,
     mfr: ` Dabur India Ltd`,
@@ -158,7 +158,7 @@ const obj = [
   },
 
   {
-    disc: `40% OFF`,
+    disc: `${40}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/858522/inlife_ashwagandha_ghan_capsules_60_s_0.jpg`,
     name: `INLIFE Ashwagandha Ghan Capsules 60's`,
     mfr: ` Inlife Pharma Private Limited`,
@@ -167,7 +167,7 @@ const obj = [
   },
 
   {
-    disc: `0% OFF`,
+    disc: `${0}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/406030/patanjali_honey_1_kg_0.jpg`,
     name: `Patanjali Honey 1 kg`,
     mfr: ` Patanjali Ayurved Ltd`,
@@ -176,7 +176,7 @@ const obj = [
   },
 
   {
-    disc: `40% OFF`,
+    disc: `${40}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/907849/sannap_hand_sanitizer_lemon_fragrance_500_ml_0_0.jpg`,
     name: `SanNap Hand Sanitizer - Lemon Fragrance 500 ml`,
     mfr: `San Nap Healthcare`,
@@ -185,7 +185,7 @@ const obj = [
   },
 
   {
-    disc: `10% OFF`,
+    disc: `${10}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/909963/wildcraft_hypashield_w95_reusable_outdoor_protection_face_mask_0_0.jpg`,
     name: `Wildcraft Hypashield W95 Reusable Outdoor Protection`,
     mfr: ` Wildcraft India Pvt Ltd`,
@@ -194,7 +194,7 @@ const obj = [
   },
 
   {
-    disc: `20% OFF`,
+    disc: `${20}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/910015/floh_anti_bacterial_face_mask_kn95_20s_0_0.jpg`,
     name: `Floh Anti Bacterial Face Mask - K N95 (Pack of 20)`,
     mfr: ` Huizhou Green Communication`,
@@ -203,7 +203,7 @@ const obj = [
   },
 
   {
-    disc: `0% OFF`,
+    disc: `${0}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/15129/dettol_hand_sanitizer_original_50_ml_0.jpg`,
     name: `Dettol Instant Hand Sanitizer - Original 50 ml`,
     mfr: `Reckitt Benckiser India Ltd`,
@@ -212,7 +212,7 @@ const obj = [
   },
 
   {
-    disc: `10% OFF`,
+    disc: `${10}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/908052/soft_hands_non_sterile_latex_medical_examination_gloves_s_100s_0_0.jpg`,
     name: `Soft Hands Non Sterile Latex Medical Examination Gloves (S)`,
     mfr: ` Medipride`,
@@ -221,7 +221,7 @@ const obj = [
   },
 
   {
-    disc: `0% OFF`,
+    disc: `${0}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/840552/dabur_honey_1_kg_0_2.jpg`,
     name: `Dabur Honey 1 kg`,
     mfr: `Dabur India Ltd`,
@@ -230,7 +230,7 @@ const obj = [
   },
 
   {
-    disc: `71% OFF`,
+    disc: `${71}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/908302/canyearn_medical_infrared_thermometer_0_0.jpg`,
     name: `Canyearn Medical Infrared Thermometer`,
     mfr: `Canyearn`,
@@ -239,7 +239,7 @@ const obj = [
   },
 
   {
-    disc: `42% OFF`,
+    disc: `${42}% OFF`,
     image: `https://www.netmeds.com/images/product-v1/150x150/902221/sahyog_wellness_multi_function_non_contact_body_object_infrared_thermometer_0_1.jpg`,
     name: `Sahyog Wellness Multi Function Non-Contact Body & Object`,
     mfr: ` Sahyog Wellness`,
@@ -254,7 +254,7 @@ if (localStorage.getItem("moreProducts") == null) {
 let information = JSON.parse(localStorage.getItem("moreProducts"));
 let inner = document.getElementById("inner");
 
-console.log(inner);
+// console.log(inner);
 
 function printProduct2(element) {
   let result = "";
@@ -270,7 +270,7 @@ function printProduct2(element) {
         <p class="p1Css">${el.name}</p>
         <p class="p1Css"><i>Mfr: ${el.mfr}</i></p>
         <p class="p1Css"> <del>${el.price1}</del> <strong>Rs. ${el.price2}</strong></p>
-        <button>ADD TO CART</button>
+        <button class ="productBtn">ADD TO CART</button>
     </div>
 </div>
         `;
@@ -279,3 +279,69 @@ function printProduct2(element) {
   inner.innerHTML = result;
 }
 printProduct2(information);
+
+/**=======================
+ * !      Sorting Functions
+ *========================**/
+
+/**=======================
+ * !      Low to High
+ *========================**/
+
+function lh() {
+  let lower = JSON.parse(localStorage.getItem("products"));
+  let lower2 = JSON.parse(localStorage.getItem("moreProducts"));
+  lower = lower.sort(function (a, b) {
+    return a.price2 - b.price2;
+  });
+  lower2 = lower2.sort(function (a, b) {
+    return a.price2 - b.price2;
+  });
+  printProduct(lower);
+  printProduct2(lower2);
+}
+
+/**=======================
+ * !      High to Low
+ *========================**/
+function hl() {
+  let high = JSON.parse(localStorage.getItem("products"));
+  let higher = JSON.parse(localStorage.getItem("moreProducts"));
+  high = high.sort(function (a, b) {
+    return b.price2 - a.price2;
+  });
+  higher = higher.sort(function (a, b) {
+    return b.price2 - a.price2;
+  });
+  printProduct(high);
+  printProduct2(higher);
+}
+
+/**=======================
+ * !      Popularity wise
+ *========================**/
+
+function popularity() {
+  let def = JSON.parse(localStorage.getItem("products"));
+  let def2 = JSON.parse(localStorage.getItem("moreProducts"));
+  printProduct(def);
+  printProduct2(def2);
+}
+
+/**=======================
+ * !      Discount wise
+ *========================**/
+
+function percent() {
+  let disco = JSON.parse(localStorage.getItem("products"));
+  let disco1 = JSON.parse(localStorage.getItem("moreProducts"));
+  disco = disco.sort(function (a, b) {
+    return +b.disc.split("%")[0] - +a.disc.split("%")[0];
+  });
+  disco1 = disco1.sort(function (a, b) {
+    return +b.disc.split("%")[0] - +a.disc.split("%")[0];
+  });
+
+  printProduct(disco);
+  printProduct2(disco1);
+}
