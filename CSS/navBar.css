@@ -117,7 +117,9 @@
     margin-left: 24px;
 }
 
-/* ! Main nav Css */
+/**<=======================
+ * !      Main Nav Css
+ *========================>**/
 
 .nav{
     display: flex;
@@ -142,6 +144,14 @@
 .nav>li>a>p{
     margin-top: 3.5px;
 }
+.nav>li>a>p>img{
+    margin-top: -5px;
+    margin-right: 3%;
+    float: right;
+}
+#navArro{
+    margin-right: 20%;
+}
 small {
     font-size: 10px;
     color: rgb(241, 245, 248);
@@ -154,6 +164,25 @@ small {
 }
 .subNav{
     display: none;
+    list-style-type: none;
+    margin-left: 50px;
+    background: rgb(243, 243, 243);
+    line-height: 20px;
+}
+.subNav>li{
+    padding: 8px;
+}
+.subNav>li:hover{
+    background: white;
+}
+.subNav>li>a:hover{
+    color: rgb(50, 174, 177);
+}
+.subNav>li>a{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: black;
 }
 
 /* * Nav-2 */

@@ -25,3 +25,12 @@ penEdit.addEventListener('click', function () {
     set.addRange(setPos);
 
 });
+
+// let navArrow = document.getElementsByClassName('navArrow');
+// navArrow.addEventListener('mouseover', display);
+
+// function display() {
+//     let subNav = document.getElementsByClassName('subNav')
+
+//     console.log("Hello")
+// }
