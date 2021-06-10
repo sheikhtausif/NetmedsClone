@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color:#F6F6F7;
+        }
         #cont{
             width:80vw;
             display:flex;
@@ -19,8 +22,7 @@
             color:#6f7284;
         }
     .card{
-        width:95%;
-        /* border:1px solid red; */
+        width:90%;
         border-radius: 10px;
         padding: 10px 20px;
         background-color:#FFFFFF;
@@ -29,29 +31,60 @@
     }
     .card>p:nth-child(1){
         font-size:18px;
-        font-weight: 600;
         letter-spacing:1px;
+        font-weight: 200;
+        color:black;
+    }
+    .card>p:nth-child(2){
+        font-style: italic;
+        position:relative;
     }
     .card>p:nth-child(3){
+        position: relative;
         color:red;
         font-size:18px;
         font-weight: 600;
     }
     .card>p:nth-child(4){
         text-decoration: 1px solid line-through; 
+        font-size:16px;
+
     }
     #payment{
+        margin-left: 20px;
         width:40%;
+        height:60%;
         border: 1px solid grey;
         padding:5px 20px;
+        background-color:white;
+        padding-bottom: 100px;
+        border-radius:10px;
     }
     .paymentDiv2{
-        border: 1px solid blue;
-        padding-left:30px;
+        padding-top: 20px;
+        padding-left:20px;
+    }
+    .paymentDiv2 span{
+        margin-left:150px;
+    }
+    .paymentDiv2>p:nth-child(2) span{
+        margin-left:117px;
+    }
+    .paymentDiv2>p:nth-child(3) span{
+        margin-left:138px;
     }
     .paymentDiv3{
-        border: 1px solid blue;
         text-align: center;
+        padding-top: 20px;
+    }
+    .proceedBtn{
+        width:130px;
+        height: 40px;
+        border-radius:5px;
+        border:none;
+        background-color:#23ADB0;
+        color:white;
+        font-size:16px;
     }
 
     </style>
@@ -60,10 +93,13 @@
     <div id="cont">
         <div id="itemCart">
             <h3>ORDER SUMMARY</h3>
+            <hr>
         </div>
         <div id="payment">
             <h3>PAYMENT DETAILS</h3>
+            <hr>         
         </div>
+        
     </div>
 </body>
 </html>
@@ -94,13 +130,23 @@
         p4.innerHTML = el.discountPrice
         
 
-        sum += (el.originalPrice)
+        sum += (el.originalPrice.split(/[\r+Rs.]/).map(Number).reduce(function(a,b){
+            return a+b
+        }))
+        disc += (el.discountPrice.split(/[\r+Rs.]/).map(Number).reduce(function(a,b){
+            return a+b
+        }))
 
-        disc += (el.discountPrice)
         
 
         let btn1 = document.createElement("button")
         btn1.innerText="Remove"
+        btn1.onclick = function(e){
+
+            e.currentTarget.parentNode.remove()
+
+        }
+
         
         let p5 = document.createElement("p")
         p5.innerHTML = `Delivery between`
@@ -111,34 +157,36 @@
     })
 
 
-console.log(sum);
-console.log(disc);
+let netmedsDiscount = sum - disc;
 
 
             let div2 = document.createElement("div")
             div2.setAttribute("class","paymentDiv2")
 
                 let p7 = document.createElement("p")
-                p7.innerHTML = `MRP TOTAL `
+                p7.innerHTML = `<p>MRP TOTAL<span>Rs.${sum}.00</span></p>`
                 let p8 = document.createElement("p")
-                p8.innerHTML = `Netmeds Discount:`
+                p8.innerHTML = `<p>Netmeds Discount <span>-Rs.${netmedsDiscount}.00</span></p>`
                 let p9 = document.createElement("p")
-                p9.innerHTML = `Total Amount:`
+                p9.innerHTML = `<p><strong>Total Amount <sup>*</sup> <span>Rs.${disc}.00</span></strong></p>`
+
 
                 div2.append(p7, p8, p9)
+
 
                 let div3 = document.createElement("div")
                 div3.setAttribute("class", "paymentDiv3")
 
 
-                let p10 = document.createElement("p")
+                let p10 = document.createElement("h3")
                 p10.innerHTML = "Total Amount"
 
-                let p11 = document.createElement("p")
-                p11.innerHTML = "$$"
+                let p11 = document.createElement("h3")
+                p11.innerHTML = `Rs.${disc}.00`
 
                 let proceed = document.createElement("button");
-                proceed.innerHTML = "Proceed"
+                proceed.innerHTML = "PROCEED"
+                proceed.setAttribute("class","proceedBtn")
 
                 div3.append(p10, p11, proceed)
 
