@@ -12,16 +12,16 @@ body {
   width: 98%;
   margin: auto;
   display: flex;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 #leftDivision {
   width: 21%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 #rightDivision {
   width: 79%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 #Category {
   width: 250px;
@@ -75,14 +75,16 @@ body {
   padding-left: 10px;
   background-color: white;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
-#filter span {
+#filter > span {
+  display: block;
   font-size: 24px;
   color: black;
   letter-spacing: 1px;
   padding-left: 10px;
+  margin-bottom: 17px;
   border-bottom: 1px solid rgb(21, 27, 57, 0.09);
 }
 
@@ -91,6 +93,7 @@ input {
   /* height: 30px; */
   border-bottom: 1px solid rgb(21, 27, 57, 0.1);
   margin-left: 10px;
+  margin-bottom: 17px;
   overflow: hidden;
   line-height: 1.3em;
 }
@@ -107,10 +110,13 @@ input {
 }
 
 #filter label {
+  display: block;
   color: black;
   font-size: 18px;
   font-weight: 600;
   padding-left: 10px;
+  margin-bottom: 8px;
+  margin-top: 8px;
   letter-spacing: 0.2px;
 }
 
@@ -351,7 +357,7 @@ strong {
 #products2 {
   width: 98%;
   padding-top: 1%;
-  padding-bottom: 3%;
+  padding-bottom: 7%;
   margin: 0px auto 20px;
   border-radius: 10px;
   background-color: white;
