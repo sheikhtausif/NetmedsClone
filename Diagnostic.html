@@ -5,26 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnostic Page</title>
+    <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="CSS/Diagnostic.css">
+    <link rel="stylesheet" href="CSS/navBar.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Book Lab Test & Health Packages Online from Best Diagnostic Labs | Netmeds</title>
 </head>
 
 <body>
 
- <header class="navBar">
-        <div class="pageWrap logo"><a href="#"><img
+    <header class="navBar">
+        <div class="pageWrap logo"><a href="/index.html"><img
                     src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds.svg" alt="Logo"></a>
         </div>
         <div class="searchDiv">
             <div class="deliveryBox">
-                <img src="/img/location.png" alt="">
+                <img src="/Images/locationHome.png" alt="">
                 <div>
                     <p>Delivering to</p>
                     <div>
                         <h4 id="editH4" min="1" max="6">110001</h4>
                         <!--  <input type="number" value="110001" id="inpEdit" min="1" max="6"> -->
-                        <button id="penEdit"><img src="/img/pen.png" alt=""></button>
+                        <button id="penEdit"><img src="/Images/pen.png" alt=""></button>
                     </div>
                 </div>
             </div>
@@ -32,20 +35,20 @@
                 <input type="search" placeholder="Search for medicine & wellness product...">
             </div>
             <div class="btnBox">
-                <button><img src="/img/searchBtn.png" alt=""></button>
+                <button><img src="/Images/searchBtn.png" alt=""></button>
             </div>
         </div>
         <div class="uploadDiv">UPLOAD</div>
-        <div class="cartIconDiv invert"><img src="/img/cartIcon.png" alt="Cart Bag"></div>
-        <div class="userIconDiv invert"><img src="/img/userIcon.png" alt="User Login"></div>
+        <div class="cartIconDiv invert"><img src="/Images/cartIcon.png" alt="Cart Bag"></div>
+        <div class="userIconDiv invert"><img src="/Images/userIcon.png" alt="User Login"></div>
         <div class="loginDiv">Sign in / Sign up</div>
     </header>
 
     <nav class="mainNav">
         <ul class="nav">
-            <li><a href="#">
-                    <img src="/img/navIcon.png" alt="Icon">
-                    <p>Medicine</p>
+            <li class="navArrow"><a href="#">
+                    <img src="/Images/navIcon.png" alt="Icon">
+                    <p>Medicine <img src="/Images/downArrow.png" alt="" class="invert" id="navArro"></p>
                     <small>Over 25000 products</small>
                 </a>
                 <ul class="subNav">
@@ -53,21 +56,21 @@
                     <li><a href="#">Perviously Ordered Products</a></li>
                 </ul>
             </li>
-            <li><a href="#">
-                    <img src="/img/navIcon.png" alt="Icon">
+            <li><a href="/wellness.html">
+                    <img src="/Images/navIcon.png" alt="Icon">
                     <p>Wellness</p>
                     <small>Health products</small>
                 </a>
             </li>
             <li><a href="#">
-                    <img src="/img/navIcon.png" alt="Icon">
+                    <img src="/Images/navIcon.png" alt="Icon">
                     <p>Diagnostic</p>
                     <small>Book test & checkup</small>
                 </a>
             </li>
             <li><a href="#">
-                    <img src="/img/navIcon.png" alt="Icon">
-                    <p>Health Corner</p>
+                    <img src="/Images/navIcon.png" alt="Icon">
+                    <p>Health Corner<img src="/Images/downArrow.png" alt="" class="invert"></p>
                     <small>Trending tips from health expert</small>
                 </a>
                 <ul class="subNav">
@@ -81,7 +84,7 @@
 
     <nav class="nav-2">
         <ul>
-            <li><a href="#">COVID Essentials</a></li>
+            <li><a href="/covidEssentials.html">COVID Essentials</a></li>
             <li><a href="#">Diabetes</a></li>
             <li><a href="#">Eyewear</a></li>
             <li><a href="#">Ayush</a></li>
@@ -95,25 +98,6 @@
             <li><a href="#">Treatments</a></li>
         </ul>
     </nav>
-
-    <!-- <div class="content">
-        <h1>Paste Your code here..........</h1>
-        <h1>Paste Your code here..........</h1>
-        <h1>Paste Your code here..........</h1>
-        <h1>Paste Your code here..........</h1>
-        <h1>Paste Your code here..........</h1>
-        <h1>Paste Your code here..........</h1>
-        <h1>Paste Your code here..........</h1>
-        <h1>Paste Your code here..........</h1>
-        <h1>Paste Your code here..........</h1>
-        <h1>Paste Your code here..........</h1>
-        <h1>Paste Your code here..........</h1>
-        <h1>Paste Your code here..........</h1>
-        <h1>Paste Your code here..........</h1>
-    </div> -->
-
-
-
 
 
     <div class="First_cont">
@@ -149,7 +133,7 @@
                     <input type="checkbox" id="checkbox">
                     <label for="">I agree to Netmeds Terms and Conditions.</label>
                 </div>
-                <button  id="booknow">BOOK NOW</button>
+                <button id="booknow">BOOK NOW</button>
             </div>
         </div>
     </div>
@@ -436,43 +420,43 @@
             <img id="imgset" src="Images/Nedall.png" alt="">
         </div>
         <div class="myLast2">
-          <div>
-              <div>
-            <img src="/Images/Whatsapp.png" alt="">
-        </div>
-        <div>
-            <p>Book On Whatsapp</p>
-            <p>7000756184</p>
-        </div>
-          </div>
-          <div>
-              <button>BOOK NOW</button>
-          </div>
+            <div>
+                <div>
+                    <img src="/Images/Whatsapp.png" alt="">
+                </div>
+                <div>
+                    <p>Book On Whatsapp</p>
+                    <p>7000756184</p>
+                </div>
             </div>
-           
-            <div class ="lastHead">
-                <ul>
-                    <li><a href="http://">Ultrasound |</a></li>  
-                    <li><a href="http://">Xray |</a></li>  
-                    <li><a href="http://">MRI |</a></li>  
-                    <li><a href="http://">CTscan |</a></li>  
-                    <li><a href="http://">PET scan</a></li>  
-                   
-                </ul>
-                <ul>
-                    <li><a href="http://">Certified Lab |</a></li>  
-                    <li><a href="http://">Best Prices |</a></li>  
-                    <li><a href="http://">Assured Quality</a></li> 
-                 
-                    
-                </ul>
+            <div>
+                <button>BOOK NOW</button>
             </div>
-            <p class="automation">Automation Powered by <a href="http://">Breakout</a></p>
         </div>
+
+        <div class="lastHead">
+            <ul>
+                <li><a href="http://">Ultrasound |</a></li>
+                <li><a href="http://">Xray |</a></li>
+                <li><a href="http://">MRI |</a></li>
+                <li><a href="http://">CTscan |</a></li>
+                <li><a href="http://">PET scan</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="http://">Certified Lab |</a></li>
+                <li><a href="http://">Best Prices |</a></li>
+                <li><a href="http://">Assured Quality</a></li>
+
+
+            </ul>
         </div>
+        <p class="automation">Automation Powered by <a href="http://">Breakout</a></p>
+    </div>
+    </div>
     </div>
 
-
+    <!--================= Footer ================-->
     <footer id="footer">
         <div class="firstDiv">
             <div class="f_logo">
@@ -560,6 +544,10 @@
             <div>Copyright© 2021 Netmeds Marketplace Ltd.</div>
         </div>
     </footer>
+
+    <script src="/JS/Diagnostic.js"></script>
+    <script type="text/javascript" src="JS/nav.js"></script>
 </body>
-<script src="/JS/Diagnostic.js"></script>
+
+
 </html>

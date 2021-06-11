@@ -88,9 +88,7 @@ body {
   border-bottom: 1px solid rgb(21, 27, 57, 0.09);
 }
 
-input {
-  border: 1px solid red;
-  /* height: 30px; */
+#filter input {
   border-bottom: 1px solid rgb(21, 27, 57, 0.1);
   margin-left: 10px;
   margin-bottom: 17px;

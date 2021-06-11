@@ -3,7 +3,7 @@
  *=============================================**/
 
 #top-add,
-img {
+#top-add>img {
   width: 98vw;
   margin: auto;
 }
@@ -174,8 +174,8 @@ body {
   position: relative;
 }
 .item h4,
-p,
-span {
+.item p,
+.item span {
   margin: 0 10px;
   padding-bottom: 10px;
   padding-left: 20px;
