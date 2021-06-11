@@ -305,21 +305,17 @@ span{
     margin: 5% 4%;
 }
 .myLast{
-   
-
     width: 84%;
     height: 45vh;
     margin: 0% auto;
     margin-top: 2%;
-
     background-color: white;
 }
 .myLast>h2,.myLast>p{
     margin: .5% 3%;
 }
 .myLast>img{
-  
-   margin: .5% 6%;
+    margin: .5% 6%;
 }
 .myLast>img:nth-child(1){
     margin: .5% 10%;
@@ -347,9 +343,7 @@ background-color: #e6f9e7;
     align-items: center;
     margin-top: 5%;
 }
-
-
- .myLast2>div>button {
+.myLast2>div>button {
   width: 100%;
   height: 10vh;
   background-color:#24aeb1 ;
