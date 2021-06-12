@@ -184,7 +184,11 @@ span {
 del {
   color: #bbbbbd;
 }
-#btn {
+/**=======================
+ * !     ADD T0 CART BUTTON
+ *========================**/
+
+.addCart {
   background-color: #34aeb2;
   color: white;
   border: none;
