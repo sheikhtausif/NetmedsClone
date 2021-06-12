@@ -24,7 +24,7 @@ body {
   /* border: 1px solid black; */
 }
 #Category {
-  width: 250px;
+  width: 93%;
   font-size: 20px;
   color: #6f7284;
   line-height: 1.6em;
@@ -68,7 +68,7 @@ body {
  * *                   Filter CSS
  =============================================*/
 #filter {
-  width: 250px;
+  width: 93%;
   font-size: 20px;
   color: #6f7284;
   line-height: 1.6em;
