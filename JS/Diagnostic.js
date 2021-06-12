@@ -26,6 +26,9 @@ function FormData(e){
    }else{
     medData.push(obj)
     localStorage.setItem('medData',JSON.stringify(medData))
+     setTimeout(() => {
+        alert('Your Product will Deliverd Soon')
+    },2000);
    }
 
 
