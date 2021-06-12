@@ -53,16 +53,24 @@
 .btn button{
     background-color: white;
     font-size: 15px;
-    border: .2px rgb(150, 149, 149) solid;
+    border: .2px rgb(206, 205, 205) solid;
 }
 .btn button:nth-child(2){
     margin-left: 1.5%;
 }
-.fa-hospital{
- font-size: 20px;
- color: violet;
- margin-right: 10%;
-}
+
+
+.btn button:nth-child(1)>i{
+    font-size: 20px;
+    color: violet;
+    margin-right: 10%;
+   }
+
+   .btn button:nth-child(2)>i{
+    font-size: 20px;
+    color: #17a2b8;
+    margin-right: 10%; 
+   }
 .checkbox{
   padding: 2%;
   margin-top: 6%;
