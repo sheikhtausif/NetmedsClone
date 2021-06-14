@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="CSS/navBar.css">
+    <link rel="stylesheet" href="CSS/cart.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="navBar">
+        <div class="pageWrap logo"><a href="/index.html"><img
+                    src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds.svg" alt="Logo"></a>
+        </div>
+        <div class="searchDiv">
+            <div class="deliveryBox">
+                <img src="/Images/locationHome.png" alt="">
+                <div>
+                    <p>Delivering to</p>
+                    <div>
+                        <h4 id="editH4" min="1" max="6">110001</h4>
+                        <!--  <input type="number" value="110001" id="inpEdit" min="1" max="6"> -->
+                        <button id="penEdit"><img src="/Images/pen.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="searchBox">
+                <input type="search" id="searchProduct" onkeyup="searchProduct()"
+                    placeholder="Search for medicine & wellness product...">
+            </div>
+            <div class="btnBox">
+                <button><img src="/Images/searchBtn.png" alt=""></button>
+            </div>
+        </div>
+        <div class="uploadDiv">UPLOAD</div>
+        <div class="cartIconDiv invert"><img src="/Images/cartIcon.png" alt="Cart Bag"></div>
+        <div class="userIconDiv invert"><img src="/Images/userIcon.png" alt="User Login"></div>
+        <div class="loginDiv">Sign in / Sign up</div>
+    </header>
+
+    <div id="cartCont">
+        <div id="leftCart"></div>
+        <div id="rightCart"></div>
+    </div>
+
+    <script src="JS/cart.js"></script>
+</body>
+
+</html>
