@@ -39,7 +39,7 @@
         </div>
         <div class="uploadDiv">UPLOAD</div>
         <div class="cartIconDiv invert"><a href="cart.html"><img src="/Images/cartIcon.png" alt="Cart Bag">
-                <p>0</p>
+                <p id="itemsInCart">0</p>
             </a>
         </div>
         <div class="userIconDiv invert"><a href="/signup.html"><img src="/Images/userIcon.png" alt="User Login"></a>
@@ -354,14 +354,14 @@
                     <input type="checkbox">Halonix Shield <br>
                 </div>
 
-                <div>
+                <!-- <div>
                     <label for="">Price</label>
                     <input value="500" min="500" max="50000" step="500" type="range">
                 </div>
                 <div>
                     <label for="">Discount</label>
                     <input value="500" min="500" max="50000" step="500" type="range">
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -407,7 +407,8 @@
             </div>
             <div id="sortingDiv">
                 <div class="buttonBox">
-                    Sort by: <button class="sortbtn" onclick="popularity()">Popularity</button>
+                    Sort by:
+                    <button class="sortbtn sortHover" onclick="popularity()">Popularity</button>
                     <button class="sortbtn" onclick="lh()">Low to High</button>
                     <button class="sortbtn" onclick="hl()">High to Low</button>
                     <button class="sortbtn" onclick="percent()">Discount</button>
@@ -512,8 +513,10 @@
             <div>Copyright© 2021 Netmeds Marketplace Ltd.</div>
         </div>
     </footer>
+
     <script src="JS/covidEssentials.js"></script>
     <script type="text/javascript" src="JS/nav.js"></script>
+    <script src="/JS/itemsInCart.js"></script>
 
 </body>
 

@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(246, 246, 247);
+    /* filter: blur(4px); */
+}
+
+#popUp {
+    position: absolute;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#popUp>p {
+    position: relative;
+    height: 150px;
+    width: 500px;
+    top: 150px;
+    left: 515px;
+    font-size: 32px;
+    background-color: rgb(50, 174, 177);
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 120px;
+}
+
+#showAlert {
+    text-align: center;
+    font-size: 16px;
+    color: red;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    visibility: hidden;
+}
+
+#mainDiv {
+    width: 60%;
+    margin: auto;
+    height: 570px;
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    padding: 14px;
+    /* border: 1px solid black; */
+}
+
+#mainDiv h2 {
+    text-align: center;
+    color: rgb(100, 93, 93);
+    /* margin-top: 12px; */
+}
+
+#addressD {
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid rgb(216, 210, 210);
+    /* border: 1px solid red; */
+}
+
+#paymentD {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+
+#addressForm {
+    width: 55%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#addressForm>input, #addressForm>label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+#addressForm>input, #addressForm>textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 11px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid rgb(168, 152, 152);
+    color: rgb(146, 143, 143);
+}
+
+#addressForm>#addressBtn {
+    width: 105.5%;
+    background: rgb(50, 174, 177);
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#paymentD>div:nth-child(2) {
+    width: 60%;
+    margin: 20px auto;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+#paymentD>div>h3 {
+    margin-bottom: 18px;
+    color: rgb(95, 93, 93);
+    text-align: center;
+}
+
+#paymentD>div>p {
+    font-size: 15px;
+    color: rgb(146, 143, 143);
+}
+
+#paymentD>div:nth-child(3) {
+    width: 80%;
+    margin: auto;
+}
+
+#paymentD>div:nth-child(3) div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 15px;
+    color: rgb(145, 139, 139);
+}
+
+#payForm {
+    width: 56%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#payForm input {
+    width: 100%;
+    display: block;
+    outline: none;
+    background: none;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#payForm label {
+    font-size: 14px;
+}
+
+#paymentD button {
+    width: 220px;
+    background: rgb(50, 174, 177);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#paymentD>div>button {
+    margin-left: 70px;
+    margin-top: 54px;
+    width: 250px;
+    padding: 12px;
+}

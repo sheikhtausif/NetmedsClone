@@ -1,8 +1,11 @@
 let cartData = JSON.parse(localStorage.getItem('cartProduct'))
 // console.log(`cartData`, cartData);
 
-let count = JSON.parse(localStorage.getItem('count')) || 0
+count = JSON.parse(localStorage.getItem('count'))
 // console.log(count);
+
+let itemsInCart = document.getElementById('itemsInCart');
+
 
 function showCart(data) {
 
@@ -42,7 +45,8 @@ function showCart(data) {
         cartImg.src = cartImgArr[i++];
     }, 2500)
 
-    let sum = 0
+    let sum = 0;
+
     for (item in data) {
         let el = data[item];
 
@@ -98,18 +102,23 @@ function showCart(data) {
             p2Child1.textContent = `Rs.${el.price2 * getValue}`
 
             sum += (el.price2 * getValue) - oldPrice;
+            localStorage.setItem('totalPrice', JSON.stringify(sum))
+
             // console.log(`total`, total)
             p2PayChild1.textContent = `Rs. ${sum}`;
             p2PayChild2.innerHTML = `<p><strong>Rs. ${sum}</strong></p>`;
             h3Child3.textContent = `Rs. ${sum}`
 
-        })
+        });
 
         let pChild3 = document.createElement('p');
         pChild3.textContent = `Delivery between Jun 20th-22th`
         let btnChild3 = document.createElement('button');
         btnChild3.textContent = `Remove`
         detailDivChild3.append(pChild3, btnChild3)
+
+        let itemsInCart = document.getElementById('itemsInCart');
+        itemsInCart.textContent = count
 
         btnChild3.addEventListener('click', function (event) {
             event.target.parentNode.parentNode.parentNode.remove();
@@ -118,18 +127,24 @@ function showCart(data) {
             let getP = p2Child1.textContent;
             let oldPrice = Number(getP.split('Rs.')[1])
 
-            sum -= oldPrice
+            sum -= oldPrice;
+            localStorage.setItem('totalPrice', JSON.stringify(sum))
+
             p2PayChild1.textContent = `Rs. ${sum}`;
             p2PayChild2.innerHTML = `<p><strong>Rs. ${sum}</strong></p>`;
             h3Child3.textContent = `Rs. ${sum}`
 
             localStorage.setItem('count', JSON.stringify(--count))
 
-            cartH1.textContent = `${JSON.parse(localStorage.getItem('count'))} Items in Cart`;
+            cartH1.textContent = `${count} Items in Cart`;
+
+            itemsInCart.textContent = count;
         });
 
     }
-    console.log(sum)
+    console.log(`PriceSum`, sum)
+    localStorage.setItem('totalPrice', JSON.stringify(sum))
+
 
     //! Payment Division 
 
@@ -163,7 +178,7 @@ function showCart(data) {
     payChild3.append(h3Child3, btnPayChild3)
 
     btnPayChild3.onclick = function () {
-        window.location.href = ``;
+        window.location.href = `payment.html`;
 
     }
 

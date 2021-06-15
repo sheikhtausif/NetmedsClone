@@ -19,10 +19,12 @@ body {
   width: 21%;
   /* border: 1px solid black; */
 }
+
 #rightDivision {
   width: 79%;
   /* border: 1px solid black; */
 }
+
 #Category {
   width: 93%;
   font-size: 20px;
@@ -45,7 +47,7 @@ body {
   letter-spacing: 0.5px;
   position: relative;
   font-size: 16px;
-  line-height: 1em;
+  line-height: 1.5rem;
   padding-left: 25px;
   cursor: pointer;
 }
@@ -55,7 +57,7 @@ body {
   padding: 5px 0 15px 25px;
 }
 
-#Category > h2 {
+#Category>h2 {
   width: 200px;
   padding: 10px 0 10px 15px;
   margin: 10px 0 20px 0;
@@ -67,6 +69,7 @@ body {
 /**==============================================
  * *                   Filter CSS
  =============================================*/
+
 #filter {
   width: 93%;
   font-size: 20px;
@@ -78,7 +81,7 @@ body {
   margin-top: 30px;
 }
 
-#filter > span {
+#filter>span {
   display: block;
   font-size: 24px;
   color: black;
@@ -132,6 +135,7 @@ body {
  * !      right division
  * ! first section - image slidding.
  *========================**/
+
 #imageSlider {
   width: 98%;
   height: 230px;
@@ -139,11 +143,13 @@ body {
   border-radius: 10px;
   /* border: 1px solid black; */
 }
-#imageSlider > img {
+
+#imageSlider>img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
+
 /**=======================
  * !      shop catagory
  *========================**/
@@ -158,17 +164,18 @@ body {
   padding-left: 0.5%;
 }
 
-#shopCategory > h3 {
+#shopCategory>h3 {
   margin: 20px 3px;
   color: rgba(21, 27, 57, 0.6);
 }
+
 .shopItem {
   height: 190px;
   display: flex;
   /* border: 1px solid black; */
 }
 
-.shopItem > div {
+.shopItem>div {
   width: 14%;
   height: 170px;
   margin: 0.75%;
@@ -177,7 +184,7 @@ body {
   border-radius: 10px;
 }
 
-.shopItem > div > img {
+.shopItem>div>img {
   width: 100%;
   height: 70%;
   border-radius: 10px;
@@ -188,7 +195,7 @@ span {
   color: rgb(177, 214, 145);
 }
 
-.shopItem > div > p {
+.shopItem>div>p {
   margin: 0 13px;
   font-size: 15px;
   white-space: nowrap;
@@ -226,7 +233,12 @@ span {
   cursor: pointer;
 }
 
-.sortbtn:nth-child(1) {
+/* .sortbtn:nth-child(1) {
+  border: 1px solid rgb(36, 174, 177);
+  color: rgb(36, 174, 177);
+} */
+
+.sortHover {
   border: 1px solid rgb(36, 174, 177);
   color: rgb(36, 174, 177);
 }
@@ -248,11 +260,13 @@ span {
   border-radius: 10px;
   background-color: white;
 }
-#products1 > h3 {
+
+#products1>h3 {
   margin-left: 2%;
   margin-bottom: 0.5%;
   color: #6f7284;
 }
+
 #second {
   width: 98%;
   /* height: 900px; */
@@ -279,7 +293,7 @@ span {
   padding: 3px;
 }
 
-.discount > .disc {
+.discount>.disc {
   font-size: 13px;
   font-weight: bold;
   color: white;
@@ -294,11 +308,10 @@ span {
   border-radius: 10px;
 }
 
-.posterDivCss > img {
+.posterDivCss>img {
   width: 100%;
   height: 100%;
   /* border-radius: 10px; */
-
   /* border: 1px solid black; */
 }
 
@@ -307,11 +320,10 @@ span {
   /* height: 49%; */
   margin: auto;
   padding: 10px;
-
   /* border: 1px solid black; */
 }
 
-.textDivCss > p {
+.textDivCss>p {
   /* padding: 2px; */
   white-space: nowrap;
   overflow: hidden;
@@ -319,11 +331,11 @@ span {
   margin: 0px 0px 4px;
 }
 
-.textDivCss > p:nth-child(1) {
+.textDivCss>p:nth-child(1) {
   font-weight: bold;
 }
 
-.textDivCss > p:nth-child(2) {
+.textDivCss>p:nth-child(2) {
   color: #6f7284;
 }
 
@@ -331,7 +343,7 @@ del {
   color: #6f7284;
 }
 
-.textDivCss > button {
+.textDivCss>button {
   width: 95%;
   padding: 10px;
   margin-top: 5px;

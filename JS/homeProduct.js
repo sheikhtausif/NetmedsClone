@@ -242,7 +242,14 @@ function showProductDown(data) {
 }
 showProductDown(lowerData);
 
-let count = 0
+// let count = 0
+let count;
+count = JSON.parse(localStorage.getItem('count'))
+if (count == null) {
+    localStorage.setItem('count', JSON.stringify(0));
+}
+// console.log(count);
+
 function addToCart(el) {
     console.log(`btnProduct`, el)
 
@@ -254,5 +261,9 @@ function addToCart(el) {
     cartArray.push(el);
     localStorage.setItem('cartProduct', JSON.stringify(cartArray))
 
-    localStorage.setItem('count', JSON.stringify(++count))
+    localStorage.setItem('count', JSON.stringify(++count));
+
+    //! Items In Cart 
+    let itemsInCart = document.getElementById('itemsInCart');
+    itemsInCart.textContent = count;
 }

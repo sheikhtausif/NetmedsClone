@@ -8,10 +8,12 @@
     <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="CSS/navBar.css">
     <link rel="stylesheet" href="CSS/signup.css">
-    <title>Netmeds Sign In / Sign Up</title>
+    <link rel="stylesheet" href="CSS/payment.css">
+    <title>Netmeds Payment</title>
 </head>
 
 <body>
+
     <header class="navBar">
         <div class="pageWrap logo"><a href="/index.html"><img
                     src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds.svg" alt="Logo"></a>
@@ -38,7 +40,7 @@
         </div>
         <div class="uploadDiv">UPLOAD</div>
         <div class="cartIconDiv invert"><a href="cart.html"><img src="/Images/cartIcon.png" alt="Cart Bag">
-                <p>0</p>
+                <p id="itemsInCart">0</p>
             </a>
         </div>
         <div class="userIconDiv invert"><a href="/signup.html"><img src="/Images/userIcon.png" alt="User Login"></a>
@@ -46,40 +48,37 @@
         <div class="loginDiv"><a href="/signup.html">Sign in / Sign up</a></div>
     </header>
 
-    <div id="mainSignUpCont">
-        <div class="imageDiv">
-            <img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" />
+    <div id="popUp">
+        <p>Thanks For Purchasing! &#128522;</p>
+    </div>
+    <p id="showAlert">Please Enter Valid Credentials</p>
+    <div id="mainDiv">
+        <div id="addressD">
+            <h2>Add Your Address</h2>
+            <form id="addressForm">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="number" id="number" placeholder="Enter your Number" min="1" max="10">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="30" rows="2" placeholder="Enter your address"></textarea>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" placeholder="Enter your city">
+                <label for="state">State</label>
+                <input type="text" name="state" id="state" placeholder="Enter your State">
+                <label for="pin">Pincode</label>
+                <input type="number" name="pin" id="pin" placeholder="Enter your Pincode" min="1" max="6">
+                <input type="button" value="Add Address" id="addressBtn">
+            </form>
         </div>
-        <div class="detailsDiv">
-            <h2>Sign In / Sign Up</h2>
-            <p>
-                Sign up or Sign in to access your orders, special offers, <br />
-                health tips and more
-            </p>
-            <label for="phone">Phone Number</label>
-            <div class="phNoDiv">
-                <div>+91</div>
-                <input type="text" id="phone" placeholder="Enter your mobile no." />
-            </div>
-            <button onclick="sendOtp()" class="otpBtn">USE OTP</button>
-            <div class="und">
-                <p class="underline">OR</p>
-            </div>
-            <button onclick="sendPassword()" class="passwordBtn">
-                USE PASSWORD
-            </button>
-            <div class="socialMedia">
-                <button onclick="google()" class="googleBtn">Google</button>
-                <button onclick="facebook()" class="facebookBtn">Facebook</button>
-            </div>
+        <div id="paymentD">
+            <h2>Payment Details</h2>
         </div>
     </div>
-    <p class="terms">
-        By continuing you agree to our <span> Terms of service</span> <br />
-        and <span> Privacy & Legal Policy</span>.
-    </p>
 
-    <script src="/JS/itemsInCart.js"></script>
+    <script src="/JS/payment.js"></script>
 </body>
 
 </html>

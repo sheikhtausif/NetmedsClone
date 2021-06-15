@@ -1,0 +1,137 @@
+let addressBtn = document.getElementById('addressBtn');
+addressBtn.addEventListener('click', showAddress);
+
+let mainDiv = document.getElementById('mainDiv')
+
+let paymentD = document.getElementById('paymentD')
+let addressDiv = document.createElement('div');
+let paymentDiv = document.createElement('div')
+paymentD.append(addressDiv, paymentDiv)
+
+let payValue = JSON.parse(localStorage.getItem('totalPrice'))
+console.log(payValue);
+
+let showAlert = document.getElementById('showAlert');
+
+let popUp = document.getElementById('popUp');
+
+function showAddress(e) {
+    e.preventDefault();
+
+    let formData = document.getElementById('addressForm');
+
+    let name = formData.name.value;
+    let email = formData.email.value;
+    let number = formData.number.value;
+    let address = formData.address.value;
+    let city = formData.city.value;
+    let state = formData.state.value;
+    let pin = formData.pin.value;
+
+    // console.log(name, email, number, address, city, state, pin)
+
+    if (name && email && number && address && city && state && pin) {
+
+        addressDiv.innerHTML = `
+        <h3>Your Shipping Address</h3>
+        <p><Strong>Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${name}</p>
+        <p><Strong>Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${email}</p>
+        <p><Strong>Number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${number}</p>
+        <p><Strong>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${address}</p>
+        <p><Strong>City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${city}</p>
+        <p><Strong>State: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${state}</p>
+        <p><Strong>Pincode: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</Strong> ${pin}</p>`
+
+        paymentDiv.innerHTML = `
+        <div>
+            <label for="pay">Cash On Delivery</label>
+            <input type="radio" name="pay" id="cashPay" onclick="cashOn()">
+        </div>
+        <div>
+            <label for="pay">Credit/Debit Card</label>
+            <input type="radio" name="pay" id="cardPay" onclick="showInput()">
+        </div>
+        `
+        showAlert.style.visibility = 'hidden'
+    }
+    else {
+        showAlert.style.visibility = 'visible'
+        // showAlert.textContent = 'Please Enter Valid Credentials'
+    }
+    formData.reset();
+}
+addressDiv.innerHTML = '';
+
+
+function cashOn() {
+
+    let payCashBtn = document.createElement('button');
+    paymentDiv.append(payCashBtn)
+    payCashBtn.setAttribute('id', 'rmBtn');
+    payCashBtn.textContent = `PAY RS. ${payValue} ON CASH`;
+
+    payCashBtn.onclick = function () {
+        popUp.style.visibility = 'visible'
+        mainDiv.style.filter = 'blur(4px)'
+
+        emptyCart()
+    }
+
+    //! To remove form
+    let removeForm = document.getElementById('payForm');
+    if (removeForm != null) removeForm.remove();
+
+    showAlert.style.visibility = 'hidden'
+}
+
+function showInput() {
+
+    let payForm = document.createElement('form');
+    paymentDiv.append(payForm);
+
+    payForm.setAttribute('id', 'payForm');
+
+    payForm.innerHTML = `
+    <label for="card">Card Number</label>
+    <input type="number" name="card" id="card" placeholder="Enter your card number">
+    <label for="cvv">CVV</label>
+    <input type="number" name="cvv" id="cvv" placeholder="CVV">
+    <label for="cardName">Name</label>
+    <input type="text" name="cardName" id="hName" placeholder="Card holder name">
+    <button onclick="paymentDone(event)">PAY RS. ${payValue}</button>
+    `
+
+    //! To remove button 
+    let removeBtn = document.getElementById('rmBtn')
+    if (removeBtn != null) removeBtn.remove();
+}
+
+function paymentDone(e) {
+    e.preventDefault();
+
+    let abc = document.getElementById('payForm');
+    let cardNo = abc.card.value
+    let cvv = abc.cvv.value
+    let hName = abc.hName.value
+
+    // console.log(cardNo, cvv, hName)
+
+    if (cardNo && cvv && hName) {
+        popUp.style.visibility = 'visible'
+        showAlert.style.visibility = 'hidden'
+        mainDiv.style.filter = 'blur(4px)'
+    }
+    else {
+        showAlert.style.visibility = 'visible'
+        // showAlert.textContent = 'Please Enter Valid Credentials'
+    }
+
+    emptyCart()
+    abc.reset();
+}
+
+function emptyCart() {
+
+    localStorage.removeItem('cartProduct')
+    localStorage.removeItem('count')
+}
