@@ -30,16 +30,21 @@
                 </div>
             </div>
             <div class="searchBox">
-                <input type="search" placeholder="Search for medicine & wellness product...">
+                <input type="search" id="searchProduct" onkeyup="searchProduct()"
+                    placeholder="Search for medicine & wellness product...">
             </div>
             <div class="btnBox">
                 <button><img src="/Images/searchBtn.png" alt=""></button>
             </div>
         </div>
         <div class="uploadDiv">UPLOAD</div>
-        <div class="cartIconDiv invert"><img src="/Images/cartIcon.png" alt="Cart Bag"></div>
-        <div class="userIconDiv invert"><img src="/Images/userIcon.png" alt="User Login"></div>
-        <div class="loginDiv">Sign in / Sign up</div>
+        <div class="cartIconDiv invert"><a href="cart.html"><img src="/Images/cartIcon.png" alt="Cart Bag">
+                <p>0</p>
+            </a>
+        </div>
+        <div class="userIconDiv invert"><a href="/signup.html"><img src="/Images/userIcon.png" alt="User Login"></a>
+        </div>
+        <div class="loginDiv"><a href="/signup.html">Sign in / Sign up</a></div>
     </header>
 
     <nav class="mainNav">
@@ -108,6 +113,218 @@
         </div>
         <div id="mainSlider"></div>
 
+        <!-- !================= Next Slider ================-->
+        <div id="nextSlider">
+            <div class="row">
+                <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1623169091_Mini-banner_web.jpg" alt="">
+            </div>
+            <div class="row">
+                <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1623383276_gmw.jpg" alt="">
+            </div>
+            <div class="row">
+                <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1623383179_agw.jpg" alt="">
+            </div>
+        </div>
+
+
+        <!--================= Payment Division ================-->
+        <div id="paymentDiv">
+            <h5>PAYMENT PARTNER OFFERS</h5>
+            <div class="swiper-slide">
+                <div class="slide-section">
+                    <img src="https://www.netmeds.com/images/cms/offers/1622458417_1619780063_1617192832_1603974751_Mobikwik_logo.png"
+                        alt="">
+                    <div class="description">
+                        <h2>Get max. Rs. 500 assured MobiKwik Cashback* ..</h2>
+                        <p>Get “Assured MobiKwik Cashback” between max. Rs. 500 and min. Rs. 50 on a minimum purchase of
+                            AN..</p>
+                    </div>
+                </div>
+                <div class="slide-section">
+                    <img src="https://www.netmeds.com/images/cms/offers/1620218903_Paytm_logo_D.png" alt="">
+                    <div class="description">
+                        <h2>Get up to Rs. 500 Paytm Cashback on Netmeds!..</h2>
+                        <p>Pay min. Rs 1000 via ONLY Paytm wallet/UPI for ONE time on Netmeds &amp; Earn upto Rs 500
+                            Paytm
+                            cashback..</p>
+                    </div>
+                </div>
+                <div class="slide-section">
+                    <img src="https://www.netmeds.com/images/cms/offers/1620218903_Paytm_logo_D.png" alt="">
+                    <div class="description">
+                        <h2>Get up to Rs. 500 Paytm Cashback on Netmeds!..</h2>
+                        <p>Pay a minimum of Rs. 1000 via ONLY the Paytm wallet/UPI for ONE time on Netmeds.com/app
+                            during
+                            the o..</p>
+                    </div>
+                </div>
+                <!-- <div class="slide-section">
+                    <img src="https://www.netmeds.com/images/cms/offers/1622810955_Icon_Amazon_Logo.png" alt="">
+                    <div class="description">
+                        <h2>Win up to Rs. 600 Amazon Pay Cashback*..</h2>
+                        <p>Win Cashback between max. Rs. 600 and min. Rs. 10 as Amazon Pay balance on a minimum purchase
+                            of
+                            ANY..</p>
+                    </div>
+                </div>
+                <div class="slide-section">
+                    <img src="https://www.netmeds.com/images/cms/offers/1619853847_Simpl_Logo.png" alt="">
+                    <div class="description">
+                        <h2>Get up to Rs. 300 Simpl Cashback* (15%)!..</h2>
+                        <p>From 04th to 30th June 2021, get up to Rs. 300 Simpl Cashback* (15%) on your payment via
+                            Simpl
+                            towar..</p>
+                    </div>
+                </div> -->
+                <!-- <div class="slide-section">
+                    <img src="https://www.netmeds.com/images/cms/offers/1582882147_Ola_Offer_Logonew.png" alt="">
+                    <div class="description">
+                        <h2>Get max Rs. 300 OlaMoney Postpaid+ Cashback on Netmeds! ..</h2>
+                        <p>Buy ANY products worth a minimum of Rs. 999 and Get cashback between Rs. 50 and Rs. 300, when
+                            you
+                            pa..</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <!--!======   Diagnostic Package ======-->
+        <div id="diagnosticPackage">
+            <h5>POPULAR</h5>
+            <p>Diagnostic Package</p>
+            <p>Free home sample collection for all health checkups</p>
+            <div>
+                <div class="diagnoCard">
+                    <img
+                        src="https://www.netmeds.com/images/cms/wysiwyg/Diagnostics/2020/netmeds-immunity-care_without-discount.jpg">
+                    <div class="text-details">
+                        <div class="dia-top">
+                            <div class="diag-txt">
+                                <h3>Netmeds Immunity Care <span><strike>Rs. 5999.00</strike></span></h3>
+                                <p>Healthians <span><strong>Rs. 1099.00</strong></span></p>
+                            </div>
+                        </div>
+                        <hr class="line">
+                        <div class="dia-bottom">
+                            <span>SAVE UPTO 80%</span>
+                            <span>BOOK NOW</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="diagnoCard">
+                    <img
+                        src="https://www.netmeds.com/images/cms/wysiwyg/Diagnostics/2020/netmeds-shield-pack_without-discount.jpg">
+                    <div class="text-details">
+                        <div class="dia-top">
+                            <div class="diag-txt">
+                                <h3>Netmeds Shield Pack <span><strike>Rs. 3000.00</strike></span></h3>
+                                <p>Neuberg <span><strong>Rs. 900.00</strong></span></p>
+                            </div>
+                        </div>
+                        <hr class="line">
+                        <div class="dia-bottom">
+                            <span>SAVE UPTO 70%</span>
+                            <span>BOOK NOW</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="diagnoCard">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/Diagnostics/2020/diabetes_339x216.jpg">
+                    <div class="text-details">
+                        <div class="dia-top">
+                            <div class="diag-txt">
+                                <h3>Diabetic Package <span><strike>Rs. 3450.00</strike></span></h3>
+                                <p>Healthians <span><strong>Rs. 899.00</strong></span></p>
+                            </div>
+                        </div>
+                        <hr class="line">
+                        <div class="dia-bottom">
+                            <span>SAVE UPTO 74%</span>
+                            <span>BOOK NOW</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="diagnoCard">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/Diagnostics/2020/heart-care_339x216.jpg">
+                    <div class="text-details">
+                        <div class="dia-top">
+                            <div class="diag-txt">
+                                <h3>Advance Health Care <span><strike>Rs. 1250.00</strike></span></h3>
+                                <p>Niramaya <span><strong>Rs. 875.00</strong></span></p>
+                            </div>
+                        </div>
+                        <hr class="line">
+                        <div class="dia-bottom">
+                            <span>SAVE UPTO 30%</span>
+                            <span>BOOK NOW</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--! Upper Product --->
+        <div class="homeProducts">
+            <h5>BEST DEAL ON</h5>
+            <p>Sunscreen Lotions</p>
+            <div id="flexProductUp" class="flexProduct"></div>
+        </div>
+
+
+        <!--!================= Popular Category ================-->
+        <div class="clearfix">
+
+            <h2>EXPLORE</h2>
+            <p>Popular Categories</p>
+            <p>Get Best Deals On Wellness Products</p>
+
+            <div class="product">
+                <div>
+                    <img src="https://www.netmeds.com/images/category/3055/thumb/covid-essentials_0.jpg" alt="" />
+                    <span>Covid Essential</span>
+                </div>
+                <div>
+                    <img src="https://www.netmeds.com/images/category/3328/thumb/diabetes_0.jpg" alt="" />
+                    <span>Diabetes</span>
+                </div>
+                <div>
+                    <img src="https://www.netmeds.com/images/category/491/thumb/homeopathy_0.jpg" alt="" />
+                    <span>Homeopathy</span>
+                </div>
+                <div>
+                    <img src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_0.jpg" alt="" />
+                    <span>Ayurvedic</span>
+                </div>
+                <div>
+                    <img src="https://www.netmeds.com/images/category/3222/thumb/vitamins_and_supplements_0.jpg"
+                        alt="" />
+                    <span>Vitamins</span>
+                </div>
+                <div>
+                    <img src="https://www.netmeds.com/images/category/3086/thumb/baby_care_0.jpg" alt="" />
+                    <span>Baby Care</span>
+                </div>
+                <div>
+                    <img src="https://www.netmeds.com/images/category/3087/thumb/feminine_hygeine_0.jpg" alt="" />
+                    <span>Feminine Hygiene</span>
+                </div>
+                <div>
+                    <img src="https://www.netmeds.com/images/category/535/thumb/face_care.jpg" alt="" />
+                    <span>Face Care</span>
+                </div>
+                <div>
+                    <img src="https://www.netmeds.com/images/category/3210/thumb/weight_management_0.jpg" alt="" />
+                    <span>Weight Management</span>
+                </div>
+            </div>
+        </div>
+
+        <!--! Lower Product --->
+        <div class="homeProducts">
+            <h5>STOCK UP</h5>
+            <p>Covid Essentials</p>
+            <div id="flexProductDown" class="flexProduct"></div>
+        </div>
 
         <!--!=== Top Brand Section ===-->
         <p id="topBrand_p">Top Brands</p>
@@ -171,6 +388,73 @@
             </div>
         </div>
 
+        <!-- !================= Health Concern ================-->
+        <div class="clearfix-2">
+            <h2>Explore By</h2>
+            <p>Health Concerns</p>
+            <p>Search products according to your health problems</p>
+
+            <div class="product2">
+                <div class="item-1">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/diabetic-care.png" alt="" />
+                    <div class="text">
+                        <h4>Diabetic care</h4>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="item-1">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/liver-care.png" alt="" />
+                    <div class="text">
+                        <h4>Liver care</h4>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="item-1">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/stomach-care.png" alt="" />
+                    <div class="text">
+                        <h4>Stomach care</h4>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="item-1">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/de-addiction.png" alt="" />
+                    <div class="text">
+                        <h4>De-Addiction</h4>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="item-1">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/kidney-care.png" alt="" />
+                    <div class="text">
+                        <h4>Kidney care</h4>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="item-1">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/lung-care.png" alt="" />
+                    <div class="text">
+                        <h4>Lung Care</h4>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="item-1">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/piles-care.png" alt="" />
+                    <div class="text">
+                        <h4>Piles care</h4>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+                <div class="item-1">
+                    <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/web/mental-care.png" alt="" />
+                    <div class="text">
+                        <h4>Mental Care</h4>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!--!================= Membership Division ================-->
         <div id="membership">
             <div class="leftDiv">
@@ -207,9 +491,64 @@
                     </div>
                 </div>
             </div>
-            <div class="rightDiv"></div>
+            <div class="rightDiv">
+                <img src="/Images/icon.png" alt="">
+                <p>Save more with Netmeds First membership</p>
+                <ul>
+                    <li>Get special discounts and offers on Netmeds services.</li>
+                    <li>Get 2.5% NMS Cash on all orders.</li>
+                </ul>
+                <div>
+                    <img src="/Images/Location.png" alt="">
+                    <p>Starting at Rs.299</p>
+                </div>
+                <button>EXPLORE PLANS</button>
+            </div>
         </div>
 
+        <!--! Health Experts --->
+        <div class="heathExpert">
+            <h5>ADVICE FORM</h5>
+            <p>Health Experts</p>
+            <p>Trending tips from doctors and health experts</p>
+            <!-- <div id="advice-form"> -->
+            <div class="item">
+                <div class="card">
+                    <img
+                        src="	https://www.netmeds.com/images/cms/magefan_blog/nmslite/1623406087_honey_features_480.jpg">
+                    <p>Healing Benefits Of Honey For Skin Health And Beauty</p>
+                </div>
+                <div class="card">
+                    <img
+                        src="	https://www.netmeds.com/images/cms/magefan_blog/nmslite/1623312008_Lemon_features_480.jpg">
+                    <div class="text-content">
+                        <p>Lemon For Wellness: Quick And Easy Desi Recipes Wi..</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                        src="	https://www.netmeds.com/images/cms/magefan_blog/nmslite/1623311840_Chafing_features_480.jpg">
+                    <div class="text-content">
+                        <p>Chafing: DIY Anti-Inflammatory Soothing Recipes To..</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img
+                        src="	https://www.netmeds.com/images/cms/magefan_blog/nmslite/1623311899_Scan_Features_480.jpg">
+                    <div class="text-content">
+                        <p>PET Scan: Know Why It Is Done And What To Expect?..</p>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                        <img
+                            src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1623226562_Arrowroot_features_480.jpg">
+                        <div class="text-content">
+                            <p>Arrowroot: Health Benefits, Nutrition, Uses Of Arr..</p>
+                        </div>
+                    </div> -->
+            </div>
+            <!-- </div> -->
+        </div>
 
         <!--!====== Text Div ======-->
         <div class="textDiv">
@@ -415,6 +754,8 @@
 
     <script src="/JS/nav.js"></script>
     <script src="/JS/home.js"></script>
+    <script src="/JS/homeProduct.js"></script>
+    <script src="/JS/search.js"></script>
 </body>
 
 </html>

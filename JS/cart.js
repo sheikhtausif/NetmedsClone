@@ -88,23 +88,22 @@ function showCart(data) {
             select.append(option)
         }
 
-        let total = 0;
         select.addEventListener('change', function () {
             let getValue = +(select.value);
-            console.log(getValue, el.price2);
+            // console.log(getValue, el.price2);
+
+            let getP = p2Child1.textContent;
+            let oldPrice = Number(getP.split('Rs.')[1])
 
             p2Child1.textContent = `Rs.${el.price2 * getValue}`
-            let sub = p2Child1.textContent;
-            // console.log(sub.split('Rs.')[1])
-            let xyz = Number(sub.split('Rs.')[1])
-            total += (el.price2 * getValue) + sum + el.price2 - xyz
+
+            sum += (el.price2 * getValue) - oldPrice;
             // console.log(`total`, total)
-            p2PayChild1.textContent = `Rs. ${total}`;
-            p2PayChild2.innerHTML = `<p><strong>Rs. ${total}</strong></p>`;
-            h3Child3.textContent = `Rs. ${total}`
+            p2PayChild1.textContent = `Rs. ${sum}`;
+            p2PayChild2.innerHTML = `<p><strong>Rs. ${sum}</strong></p>`;
+            h3Child3.textContent = `Rs. ${sum}`
 
         })
-
 
         let pChild3 = document.createElement('p');
         pChild3.textContent = `Delivery between Jun 20th-22th`
@@ -116,7 +115,10 @@ function showCart(data) {
             event.target.parentNode.parentNode.parentNode.remove();
             removeData(el.id);
 
-            sum -= el.price2
+            let getP = p2Child1.textContent;
+            let oldPrice = Number(getP.split('Rs.')[1])
+
+            sum -= oldPrice
             p2PayChild1.textContent = `Rs. ${sum}`;
             p2PayChild2.innerHTML = `<p><strong>Rs. ${sum}</strong></p>`;
             h3Child3.textContent = `Rs. ${sum}`
@@ -159,6 +161,11 @@ function showCart(data) {
     let btnPayChild3 = document.createElement('button');
     btnPayChild3.textContent = `PROCEED`
     payChild3.append(h3Child3, btnPayChild3)
+
+    btnPayChild3.onclick = function () {
+        window.location.href = ``;
+
+    }
 
     let pSmallPay = document.createElement('p')
     pSmallPay.textContent = `Netmeds is a technology platform to facilitate transaction of business. The products and services are offered for sale by the sellers. The user authorizes the delivery personnel to be his agent for delivery of the goods. For details read Terms & Conditions`;
