@@ -279,7 +279,7 @@ span {
   background-color: white;
 }
 
-#productCardCss {
+.productCardCss {
   height: 340px;
   border-radius: 10px;
   /* margin: 10px; */
@@ -343,7 +343,7 @@ del {
   color: #6f7284;
 }
 
-.textDivCss>button {
+.textDivCss>button, .productBtn {
   width: 95%;
   padding: 10px;
   margin-top: 5px;
@@ -352,6 +352,7 @@ del {
   font-weight: bold;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 strong {
@@ -385,7 +386,7 @@ strong {
   background-color: white;
 }
 
-#productCardCss2 {
+.productCardCss2 {
   height: 340px;
   border-radius: 10px;
   /* margin: 10px; */

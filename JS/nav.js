@@ -1,6 +1,9 @@
 let penEdit = document.getElementById('penEdit');
+
+let editH4 = document.getElementById('editH4');
+
 penEdit.addEventListener('click', function () {
-    let editH4 = document.getElementById('editH4');
+
     editH4.contentEditable = "true";
 
     editH4.focus();
@@ -25,6 +28,14 @@ penEdit.addEventListener('click', function () {
     set.addRange(setPos);
 
 });
+
+editH4.addEventListener('keyup', function () {
+
+    let newValue = document.getElementById('editH4').textContent;
+    console.log(newValue)
+
+    editH4.textContent = newValue
+})
 
 // let navArrow = document.getElementsByClassName('navArrow');
 // navArrow.addEventListener('mouseover', display);

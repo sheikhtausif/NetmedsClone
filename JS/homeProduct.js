@@ -242,7 +242,6 @@ function showProductDown(data) {
 }
 showProductDown(lowerData);
 
-// let count = 0
 let count;
 count = JSON.parse(localStorage.getItem('count'))
 if (count == null) {

@@ -16,10 +16,10 @@ body {
 
 #popUp>p {
     position: relative;
-    height: 150px;
+    height: 170px;
     width: 500px;
-    top: 150px;
-    left: 515px;
+    top: 130px;
+    left: 520px;
     font-size: 32px;
     background-color: rgb(50, 174, 177);
     color: white;
@@ -51,8 +51,8 @@ body {
 
 #mainDiv h2 {
     text-align: center;
-    color: rgb(100, 93, 93);
-    /* margin-top: 12px; */
+    color: rgb(114, 111, 111);
+    margin-top: 8px;
 }
 
 #addressD {
@@ -71,32 +71,41 @@ body {
 #addressForm {
     width: 55%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-#addressForm>input, #addressForm>label {
-    display: block;
+#addressForm>label {
+    /* display: block; */
     margin-bottom: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(44, 180, 182);
 }
 
 #addressForm>input, #addressForm>textarea {
+    display: block;
     width: 100%;
     padding: 5px;
     margin-bottom: 11px;
-    font-size: 16px;
+    font-size: 15px;
     border: none;
     outline: none;
     background: none;
-    border-bottom: 1px solid rgb(168, 152, 152);
-    color: rgb(146, 143, 143);
+    border-bottom: 1px solid rgb(209, 199, 199);
+    color: black
+}
+
+#addressForm>textarea {
+    font-size: 17px;
+    letter-spacing: -1px;
 }
 
 #addressForm>#addressBtn {
-    width: 105.5%;
+    width: 105%;
     background: rgb(50, 174, 177);
     color: white;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 37px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -104,21 +113,29 @@ body {
 }
 
 #paymentD>div:nth-child(2) {
-    width: 60%;
-    margin: 20px auto;
-    line-height: 20px;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    line-height: 22px;
     letter-spacing: 1px;
+    padding-bottom: 10px;
 }
 
 #paymentD>div>h3 {
-    margin-bottom: 18px;
-    color: rgb(95, 93, 93);
-    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 28px;
+    color: rgb(151 149 149);
+    font-size: 14px;
 }
 
 #paymentD>div>p {
-    font-size: 15px;
-    color: rgb(146, 143, 143);
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(190 176 176);
+}
+
+#paymentD>div>p:nth-child(2) {
+    font-size: 18px;
+    color: rgb(50, 174, 177);
 }
 
 #paymentD>div:nth-child(3) {
@@ -129,7 +146,7 @@ body {
 #paymentD>div:nth-child(3) div {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 8px;
     font-size: 15px;
     color: rgb(145, 139, 139);
 }
@@ -137,7 +154,7 @@ body {
 #payForm {
     width: 56%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 6px;
 }
 
 #payForm input {
@@ -153,7 +170,9 @@ body {
 }
 
 #payForm label {
-    font-size: 14px;
+    font-size: 12.8px;
+    font-weight: bold;
+    color: rgb(50, 174, 177);
 }
 
 #paymentD button {
@@ -174,4 +193,11 @@ body {
     margin-top: 54px;
     width: 250px;
     padding: 12px;
+}
+
+#paymentD>div:nth-child(3)>div label {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(50, 174, 177);
+    margin-bottom: 16px;
 }

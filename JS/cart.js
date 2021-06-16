@@ -5,7 +5,7 @@ count = JSON.parse(localStorage.getItem('count'))
 // console.log(count);
 
 let itemsInCart = document.getElementById('itemsInCart');
-
+itemsInCart.textContent = count
 
 function showCart(data) {
 
@@ -117,8 +117,8 @@ function showCart(data) {
         btnChild3.textContent = `Remove`
         detailDivChild3.append(pChild3, btnChild3)
 
-        let itemsInCart = document.getElementById('itemsInCart');
-        itemsInCart.textContent = count
+        // let itemsInCart = document.getElementById('itemsInCart');
+        // itemsInCart.textContent = count
 
         btnChild3.addEventListener('click', function (event) {
             event.target.parentNode.parentNode.parentNode.remove();
@@ -178,8 +178,8 @@ function showCart(data) {
     payChild3.append(h3Child3, btnPayChild3)
 
     btnPayChild3.onclick = function () {
-        window.location.href = `payment.html`;
-
+        if (count == 0) alert("Please add item in cart!")
+        else window.location.href = `payment.html`;
     }
 
     let pSmallPay = document.createElement('p')
@@ -202,4 +202,3 @@ function removeData(el) {
         }
     }
 }
-// localStorage.setItem('count', JSON.stringify(count));

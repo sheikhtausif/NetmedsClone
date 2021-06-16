@@ -15,6 +15,10 @@ let showAlert = document.getElementById('showAlert');
 
 let popUp = document.getElementById('popUp');
 
+count = JSON.parse(localStorage.getItem('count'));
+let itemsInCart = document.getElementById('itemsInCart');
+itemsInCart.textContent = count;
+
 function showAddress(e) {
     e.preventDefault();
 
@@ -33,22 +37,32 @@ function showAddress(e) {
     if (name && email && number && address && city && state && pin) {
 
         addressDiv.innerHTML = `
-        <h3>Your Shipping Address</h3>
-        <p><Strong>Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${name}</p>
-        <p><Strong>Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${email}</p>
-        <p><Strong>Number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${number}</p>
-        <p><Strong>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${address}</p>
-        <p><Strong>City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${city}</p>
-        <p><Strong>State: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${state}</p>
-        <p><Strong>Pincode: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</Strong> ${pin}</p>`
+        <h3>SHIPPING ADDRESS</h3>
+        <p>${name}</p>
+        <p>${email}</p>
+        <p>${number}</p>
+        <p>${address}</p>
+        <p>${city}</p>
+        <p>${state}</p>
+        <p>${pin}</p>`
+
+        // addressDiv.innerHTML = `
+        // <h3>Your Shipping Address</h3>
+        // <p><Strong>Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${name}</p>
+        // <p><Strong>Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${email}</p>
+        // <p><Strong>Number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${number}</p>
+        // <p><Strong>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${address}</p>
+        // <p><Strong>City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${city}</p>
+        // <p><Strong>State: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${state}</p>
+        // <p><Strong>Pin Code: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</Strong> ${pin}</p>`
 
         paymentDiv.innerHTML = `
         <div>
-            <label for="pay">Cash On Delivery</label>
+            <label for="pay">CASH ON DELIVERY</label>
             <input type="radio" name="pay" id="cashPay" onclick="cashOn()">
         </div>
         <div>
-            <label for="pay">Credit/Debit Card</label>
+            <label for="pay">CREDIT & DEBIT CARD</label>
             <input type="radio" name="pay" id="cardPay" onclick="showInput()">
         </div>
         `
@@ -71,6 +85,7 @@ function cashOn() {
     payCashBtn.textContent = `PAY RS. ${payValue} ON CASH`;
 
     payCashBtn.onclick = function () {
+
         popUp.style.visibility = 'visible'
         mainDiv.style.filter = 'blur(4px)'
 
@@ -92,11 +107,11 @@ function showInput() {
     payForm.setAttribute('id', 'payForm');
 
     payForm.innerHTML = `
-    <label for="card">Card Number</label>
+    <label for="card">CARD NUMBER</label>
     <input type="number" name="card" id="card" placeholder="Enter your card number">
     <label for="cvv">CVV</label>
     <input type="number" name="cvv" id="cvv" placeholder="CVV">
-    <label for="cardName">Name</label>
+    <label for="cardName">NAME ON CARD</label>
     <input type="text" name="cardName" id="hName" placeholder="Card holder name">
     <button onclick="paymentDone(event)">PAY RS. ${payValue}</button>
     `
@@ -131,7 +146,8 @@ function paymentDone(e) {
 }
 
 function emptyCart() {
-
+    localStorage.setItem('count', JSON.stringify(0))
     localStorage.removeItem('cartProduct')
-    localStorage.removeItem('count')
+    count = JSON.parse(localStorage.getItem('count'))
+    itemsInCart.textContent = count;
 }

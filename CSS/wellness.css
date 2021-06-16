@@ -209,16 +209,12 @@ strong {
 }
 
 .item-1 {
-  min-width: 270px;
+  min-width: 340px;
   height: 200px;
   border-radius: 10px;
-  /* margin: 35px  20px;
-         */
-  margin-top: 35px;
-  margin-left: 50px;
-  margin-right: 20px;
+  margin: 30px 20px 10px 14px;
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .item-1:nth-child(1) {
@@ -247,11 +243,14 @@ strong {
 }
 
 .text>span {
+  margin-left: 28px;
   color: #34aeb2;
+  font-size: 15px;
 }
 
 .text>h4 {
   padding-left: 30px;
+  margin-bottom: 22px;
 }
 
 /**==============================================

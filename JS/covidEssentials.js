@@ -100,39 +100,52 @@ const object1 = [
 if (localStorage.getItem("products1") == null) {
     localStorage.setItem("products1", JSON.stringify(object1));
 }
-let data = JSON.parse(localStorage.getItem("products1"));
+let data1 = JSON.parse(localStorage.getItem("products1"));
 // let productDiv = document.getElementById("products");
-let second = document.getElementById("second");
+// console.log(data1);
 
-// console.log(data);
+let second = document.getElementById('second');
+
 
 /**=======================
  * !      print product data on browser
  *========================**/
 
-function printProduct(elem) {
-    let res = "";
-    for (item in elem) {
-        let el = elem[item];
-        res += `
-        <div id="productCardCss">
-        <div class="discount"><span class="disc">${el.disc}</span></div>
-    <div class="posterDivCss">
-        <img src=${el.image}>
-    </div>
-    <div class="textDivCss">
-        <p class="p1Css">${el.name}</p>
-        <p class="p1Css"><i>Mfr: ${el.mfr}</i></p>
-        <p class="p1Css"> <del>${el.price1}</del> <strong>Rs. ${el.price2}</strong></p>
-        <button>ADD TO CART</button>
-    </div>
-</div>
-        `;
-        // console.log(typeof +el.disc.split("%")[0]);
+
+function printProduct(data) {
+    let second = document.getElementById('second');
+    second.innerHTML = '';
+
+    for (item in data) {
+        let el = data[item];
+        let productCardCss = document.createElement('div');
+        productCardCss.setAttribute('class', 'productCardCss');
+        second.append(productCardCss);
+
+        let discDiv = document.createElement('div');
+        discDiv.setAttribute('class', 'discount')
+        discDiv.innerHTML = `<span class="disc">${el.disc}</span>`
+        let posterDivCss = document.createElement('div');
+        posterDivCss.setAttribute('class', 'posterDivCss')
+        posterDivCss.innerHTML = `<img src=${el.image}>`
+        let textDivCss = document.createElement('div');
+        textDivCss.setAttribute('class', 'textDivCss')
+        textDivCss.innerHTML = `<p class="p1Css">${el.name}</p>
+            <p class="p1Css"><i>Mfr: ${el.mfr}</i></p>
+            <p class="p1Css"> <del>${el.price1}</del> <strong>Rs. ${el.price2}</strong></p>`;
+
+        let productBtn = document.createElement('button');
+        productBtn.setAttribute('class', 'productBtn');
+        productBtn.textContent = `ADD TO CART`;
+        productCardCss.append(discDiv, posterDivCss, textDivCss, productBtn);
+
+        productBtn.onclick = function () {
+            addToCartCovid(el);
+        }
+
     }
-    second.innerHTML = res;
 }
-printProduct(data);
+printProduct(data1);
 
 /**=======================
  * !      product division 2
@@ -252,33 +265,61 @@ if (localStorage.getItem("moreProducts") == null) {
     localStorage.setItem("moreProducts", JSON.stringify(obj));
 }
 let information = JSON.parse(localStorage.getItem("moreProducts"));
-let inner = document.getElementById("inner");
 
-// console.log(inner);
 
-function printProduct2(element) {
-    let result = "";
-    for (item in element) {
-        let el = element[item];
-        result += `
-  <div id="productCardCss2">
-        <div class="discount"><span class="disc">${el.disc}</span></div>
-    <div class="posterDivCss">
-        <img src=${el.image}>
-    </div>
-    <div class="textDivCss">
-        <p class="p1Css">${el.name}</p>
-        <p class="p1Css"><i>Mfr: ${el.mfr}</i></p>
-        <p class="p1Css"> <del>${el.price1}</del> <strong>Rs. ${el.price2}</strong></p>
-        <button class ="productBtn" onclick="">ADD TO CART</button>
-    </div>
-  </div>
-        `;
+function printProduct2(data) {
+    let inner = document.getElementById('inner');
+    inner.innerHTML = '';
+    for (item in data) {
+        let el = data[item];
+        let productCardCss2 = document.createElement('div');
+        productCardCss2.setAttribute('class', 'productCardCss2');
+        inner.append(productCardCss2);
+
+        let discDiv = document.createElement('div');
+        discDiv.setAttribute('class', 'discount')
+        discDiv.innerHTML = `<span class="disc">${el.disc}</span>`
+        let posterDivCss = document.createElement('div');
+        posterDivCss.setAttribute('class', 'posterDivCss')
+        posterDivCss.innerHTML = `<img src=${el.image}>`
+        let textDivCss = document.createElement('div');
+        textDivCss.setAttribute('class', 'textDivCss')
+        textDivCss.innerHTML = `<p class="p1Css">${el.name}</p>
+            <p class="p1Css"><i>Mfr: ${el.mfr}</i></p>
+            <p class="p1Css"> <del>${el.price1}</del> <strong>Rs. ${el.price2}</strong></p>`;
+
+        let productBtn = document.createElement('button');
+        productBtn.setAttribute('class', 'productBtn');
+        productBtn.textContent = `ADD TO CART`;
+        productCardCss2.append(discDiv, posterDivCss, textDivCss, productBtn);
+
+        productBtn.onclick = function () {
+            addToCartCovid(el);
+        }
+
     }
-
-    inner.innerHTML = result;
 }
 printProduct2(information);
+
+count = JSON.parse(localStorage.getItem('count'))
+
+function addToCartCovid(el) {
+
+    let cartArray = localStorage.getItem('cartProduct');
+    console.log(cartArray);
+    if (cartArray == null) cartArray = [];
+    else cartArray = JSON.parse(cartArray);
+
+    cartArray.push(el);
+    localStorage.setItem('cartProduct', JSON.stringify(cartArray))
+
+    localStorage.setItem('count', JSON.stringify(++count));
+
+    //! Items In Cart 
+    let itemsInCart = document.getElementById('itemsInCart');
+    itemsInCart.textContent = count;
+}
+
 
 /**=======================
  * !      Sorting Functions
@@ -344,7 +385,5 @@ function percent() {
 
     printProduct(disco);
     printProduct2(disco1);
-
-
 
 }
