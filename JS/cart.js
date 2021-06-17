@@ -33,7 +33,7 @@ function showCart(data) {
     leftCart.append(cartSlider, mainCart);
 
 
-    let cartImgArr = ['https://www.netmeds.com/images/cms/aw_rbslider/slides/1623248713_Cart_Bannerdsgsg.jpg', 'https://www.netmeds.com/images/cms/aw_rbslider/slides/1619788856_Cart_Bannerbnnn.jpg', 'https://www.netmeds.com/images/cms/aw_rbslider/slides/1619789115_Cart_Bannerhiuiuiu.jpg'];
+    let cartImgArr = ['https://www.netmeds.com/images/cms/aw_rbslider/slides/1623246675_Web_homevdas.jpg', 'https://www.netmeds.com/images/cms/aw_rbslider/slides/1619783794_Web_homertte.jpg', 'https://www.netmeds.com/images/cms/aw_rbslider/slides/1619784158_Home_bannerma25.jpg', 'https://www.netmeds.com/images/cms/aw_rbslider/slides/1622469732_free_webhomed.jpg'];
 
     cartImg.src = cartImgArr[0];
 
@@ -46,7 +46,7 @@ function showCart(data) {
     }, 2500)
 
     let sum = 0;
-
+    // sum.toFixed(2);
     for (item in data) {
         let el = data[item];
 
@@ -99,9 +99,13 @@ function showCart(data) {
             let getP = p2Child1.textContent;
             let oldPrice = Number(getP.split('Rs.')[1])
 
-            p2Child1.textContent = `Rs.${el.price2 * getValue}`
+            let total = el.price2 * getValue
+            total = total.toFixed(2);
+            p2Child1.textContent = `Rs.${total}`
 
-            sum += (el.price2 * getValue) - oldPrice;
+            sum += (total) - oldPrice;
+            // sum.toFixed(2);
+
             localStorage.setItem('totalPrice', JSON.stringify(sum))
 
             // console.log(`total`, total)
@@ -128,6 +132,8 @@ function showCart(data) {
             let oldPrice = Number(getP.split('Rs.')[1])
 
             sum -= oldPrice;
+            // sum.toFixed(2);
+
             localStorage.setItem('totalPrice', JSON.stringify(sum))
 
             p2PayChild1.textContent = `Rs. ${sum}`;

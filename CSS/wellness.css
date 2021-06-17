@@ -2,25 +2,25 @@
  * !             wellness page Css
  *=============================================**/
 
-#top-add, #top-add>img {
-  width: 98vw;
-  margin: auto;
-}
-
 body {
-  background-color: #dae2e1;
+    background-color: #dae2e1;
+    font-family: 'Lato', sans-serif;
 }
 
-#wellnessWidth {
-  width: 97%;
-  margin: auto;
-  margin-bottom: 40px;
+#top-add {
+    width: 98%;
+    height: 340px;
+    margin: 20px auto;
+}
+
+#top-add img {
+    width: 100%;
+    height: 100%;
 }
 
 #container {
-  width: 98vw;
-  /* height: 250px; */
-  margin: auto;
+    width: 97%;
+    margin: auto;
 }
 
 /**=======================
@@ -28,162 +28,164 @@ body {
  *========================**/
 
 .clearfix {
-  height: 320px;
-  border-radius: 10px;
-  background-color: white;
-  margin-bottom: 20px;
+    height: 320px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 20px;
 }
 
 .home-shopby-category {
-  height: 80px;
-  padding-left: 20px;
+    height: 80px;
+    padding-left: 20px;
 }
 
 .home-shopby-category h2 {
-  font-size: 16px;
-  letter-spacing: 1px;
-  padding-left: 10px;
-  padding-top: 10px;
-  text-align: left;
-  line-height: 19.5px;
-  color: #6f7284;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: left;
+    line-height: 19.5px;
+    color: #6f7284;
 }
 
 .home-shopby-category span {
-  font-size: 20px;
-  letter-spacing: 1px;
-  padding: 0 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 0 0;
+    margin: 12px 0 8px 10px;
 }
 
 .home-shopby-category p {
-  font-size: 14px;
-  padding-left: 0;
-  line-height: 2em;
-  color: #6f7284;
+    font-size: 14px;
+    padding-left: 0;
+    line-height: 2em;
+    color: #6f7284;
+    margin-left: 10px;
 }
 
 .product {
-  height: 250px;
-  display: flex;
-  overflow: scroll;
-  position: relative;
-}
-
-/**=======================
- * *    First Section Arrow
- *========================**/
-
-/* arrow */
-
-.left {
-  position: absolute;
-  bottom: -10px;
-  left: 25px;
-}
-
-.right {
-  position: absolute;
-  bottom: -10px;
-  left: 1380px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    /* overflow: scroll; */
 }
 
 .product>div {
-  width: 150px;
-  height: 175px;
-  text-align: center;
-  margin: 30px 45px;
+    width: 150px;
+    height: 175px;
+    text-align: center;
+    margin: 30px 45px;
 }
 
 .product img {
-  width: 150px;
-  height: 160px;
-  border: 1px solid #bbbbbd;
-  border-radius: 5px;
+    width: 150px;
+    height: 160px;
+    border: 1px solid #bbbbbd;
+    border-radius: 5px;
 }
 
-/**=======================
- * *       Section Section
- *========================**/
+/* ! All Product CSS  */
 
-.clearfix-1 {
-  height: 450px;
-  border-radius: 10px;
-  background-color: white;
-  margin-bottom: 20px;
+.homeProducts {
+    width: 98%;
+    margin: 25px auto;
+    height: 100px;
+    background: white;
+    border-radius: 10px;
+    padding: 0 12px;
+    height: 464px;
+    /* border: 1px solid green; */
 }
 
-.product1 {
-  height: 350px;
-  display: flex;
-  overflow: scroll;
-  margin-top: 20px;
-  position: relative;
-  gap: 16px;
+.homeProducts>h5 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgb(77, 72, 72);
+    margin-left: 15px;
+    padding-top: 18px;
 }
 
-#slide-btn {
-  width: 30px;
-  padding-bottom: 8px;
-  border-radius: 50%;
-  color: white;
-  border-color: white;
-  border: none;
+.homeProducts>p {
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: rgb(77, 72, 72);
+    margin: 13px 0 2px 15px;
 }
 
-.product1 img {
-  width: 70%;
-  height: 150px;
-  border-radius: 5px;
-  border-radius: 10px;
-  padding-top: 10px;
-  margin-left: 32px;
-  cursor: pointer;
+.flexProduct {
+    display: flex;
+    gap: 12px;
+    padding: 0 15px;
+    margin-top: 18px;
 }
 
-.item {
-  width: 220px;
-  height: 330px;
-  border: 1px solid #dae2e1;
-  border-radius: 10px;
-  position: relative;
+.flexProduct>div {
+    width: 15.8%;
+    border: 1px solid #dbd6d6;
+    border-radius: 10px;
+    /* padding: 5px; */
+    /* letter-spacing: 1px; */
 }
 
-.item h4, .item p, .item span {
-  margin: 0 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  cursor: pointer;
+.flexProduct>div>p:first-child {
+    width: 52px;
+    padding: 2px;
+    font-size: 10px;
+    background: rgb(132, 190, 82);
+    color: white;
+    border-radius: 4px;
+    margin: 7px;
+    /* letter-spacing: 1px; */
 }
 
-del {
-  color: #bbbbbd;
+.flexProduct h5, .flexProduct p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-#btn {
-  background-color: #34aeb2;
-  color: white;
-  border: none;
-  width: 160px;
-  height: 40px;
-  margin: 10px 30px 10px 30px;
-  border-radius: 5px;
-  cursor: pointer;
+.flexProduct img {
+    width: 65%;
+    height: 170px;
+    text-align: center;
+    margin-left: 17.5%;
 }
 
-strong {
-  font-size: 20px;
-  color: #fb2855;
-  cursor: default;
+.flexProduct h5 {
+    color: rgb(71, 70, 70);
+    margin-left: 7px;
 }
 
-.discount {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: white;
-  border: none;
-  background-color: #86be52;
-  border-radius: 2px;
+.flexProduct>div>p:nth-child(4) {
+    font-size: 12px;
+    color: #6f7284;
+    font-style: italic;
+    margin: 7px 0 2px 7px;
+}
+
+.flexProduct>div>p:nth-child(5) {
+    font-size: 16px;
+    color: red;
+    margin: 5px 0 5px 7px;
+}
+
+.flexProduct>div>p:nth-child(5) strike {
+    font-size: 12px;
+    color: darkgray;
+}
+
+.flexProduct button {
+    width: 94%;
+    padding: 10px;
+    background: rgb(50, 174, 177);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px 0 9px 3%;
 }
 
 /**=======================
@@ -191,128 +193,64 @@ strong {
  *========================**/
 
 .clearfix-2 {
-  height: 350px;
-  border-radius: 10px;
-  background-color: white;
+    height: 350px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .product2 {
-  height: 270px;
-  display: flex;
-  overflow: scroll;
+    height: 270px;
+    display: flex;
+    overflow: scroll;
 }
 
 .product2 img {
-  width: 100%;
-  height: 200px;
-  border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
 }
 
 .item-1 {
-  min-width: 340px;
-  height: 200px;
-  border-radius: 10px;
-  margin: 30px 20px 10px 14px;
-  position: relative;
-  /* border: 1px solid red; */
+    min-width: 340px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 30px 20px 10px 14px;
+    position: relative;
+    /* border: 1px solid red; */
 }
 
 .item-1:nth-child(1) {
-  background-color: rgb(255, 243, 235);
+    background-color: rgb(255, 243, 235);
 }
 
 .item-1:nth-child(2) {
-  background-color: #f6fae8;
+    background-color: #f6fae8;
 }
 
 .item-1:nth-child(3) {
-  background-color: #ebfefc;
+    background-color: #ebfefc;
 }
 
 .item-1:nth-child(4) {
-  background-color: #eaf9ff;
+    background-color: #eaf9ff;
 }
 
 .text {
-  width: 150px;
-  height: 100px;
-  position: absolute;
-  top: 10px;
-  font-size: 18px;
-  cursor: pointer;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .text>span {
-  margin-left: 28px;
-  color: #34aeb2;
-  font-size: 15px;
+    margin-left: 28px;
+    color: #34aeb2;
+    font-size: 15px;
 }
 
 .text>h4 {
-  padding-left: 30px;
-  margin-bottom: 22px;
-}
-
-/**==============================================
- * !                 slide on click
- *=============================================**/
-
-.up, .down {
-  cursor: pointer;
-  position: absolute;
-  background-color: white;
-  margin-top: 120px;
-  padding: 16px;
-  color: rgb(104, 101, 101);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.down {
-  right: 0px;
-}
-
-.up {
-  left: 0px;
-}
-
-.product:hover {
-  text-decoration: underline;
-}
-
-.arrow {
-  font-size: 18px;
-  overflow: auto;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.youscroll {
-  margin-top: 30px;
-  height: fit-content;
-  color: black;
-  /* display: flex; */
-  align-items: center
-}
-
-.align {
-  display: flex;
-  width: 97%;
-  margin: auto;
-  color: black;
-  border: 1px rgb(129, 129, 129) solid;
-  border-radius: 10px;
-  /* padding: 2% 0%; */
-}
-
-.align>p {
-  margin-left: 0px;
-}
-
-.product1::-webkit-scrollbar {
-  height: 0px;
-  background-color: #F5F5F5;
+    padding-left: 30px;
+    margin-bottom: 22px;
 }

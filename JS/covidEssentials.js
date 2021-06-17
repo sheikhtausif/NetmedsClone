@@ -3,6 +3,8 @@ const arr = [
     `https://www.netmeds.com/images/cms/aw_rbslider/slides/1621014292_Category_web.jpg`,
     `https://www.netmeds.com/images/cms/aw_rbslider/slides/1620226380_Category_web.jpg`,
     `https://www.netmeds.com/images/cms/aw_rbslider/slides/1594275598_Category_web_1000X200.jpg`,
+    'https://www.netmeds.com/images/cms/aw_rbslider/slides/1621187223_Category_web_Green.jpg',
+    'https://www.netmeds.com/images/cms/aw_rbslider/slides/1623343441_Category_web.jpg'
 ];
 let imageSlider = document.getElementById("imageSlider");
 let img = document.createElement("img");
@@ -39,7 +41,7 @@ const object1 = [
         name: `FLOH Instant Hand Sanitizer with 70% Ethyl Alcohol - Spearmint`,
         mfr: `Sharp Mint Limited`,
         price1: `Rs. 2499.0`,
-        price2: 749.7,
+        price2: 749.50,
     },
 
     {
@@ -176,7 +178,7 @@ const obj = [
         name: `INLIFE Ashwagandha Ghan Capsules 60's`,
         mfr: ` Inlife Pharma Private Limited`,
         price1: `Rs. 499`,
-        price2: 299.4,
+        price2: 299.40,
     },
 
     {

@@ -276,7 +276,7 @@
 }
 
 .flexProduct>div {
-    width: 16%;
+    width: 15.8%;
     border: 1px solid #dbd6d6;
     border-radius: 10px;
     /* padding: 5px; */
@@ -380,8 +380,8 @@
 .product {
     height: 250px;
     display: flex;
-    overflow: scroll;
     position: relative;
+    /* overflow: scroll; */
 }
 
 .product>div {
@@ -453,7 +453,6 @@
 .clearfix-2 {
     width: 97%;
     margin: auto;
-    /* height: 350px; */
     border-radius: 10px;
     background-color: white;
 }
@@ -461,9 +460,9 @@
 .product2 {
     height: 270px;
     display: flex;
-    overflow: scroll;
     gap: 20px;
     padding: 20px;
+    /* overflow: scroll; */
 }
 
 .product2 img {
@@ -522,8 +521,8 @@
 /* !================= Membership Division ================ */
 
 #membership {
-    width: 96%;
-    margin: auto;
+    width: 97%;
+    margin: 25px auto;
     background: white;
     border-radius: 10px;
     display: flex;
@@ -641,7 +640,7 @@
  *========================**/
 
 .heathExpert {
-    width: 96%;
+    width: 97%;
     margin: 25px auto;
     background: white;
     border-radius: 10px;

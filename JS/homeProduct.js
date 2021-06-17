@@ -242,6 +242,7 @@ function showProductDown(data) {
 }
 showProductDown(lowerData);
 
+//! count item in cart 
 let count;
 count = JSON.parse(localStorage.getItem('count'))
 if (count == null) {

@@ -2,6 +2,7 @@ body {
   background-color: #f3f3f3;
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 /**==============================================
@@ -344,7 +345,7 @@ del {
 }
 
 .textDivCss>button, .productBtn {
-  width: 95%;
+  width: 85%;
   padding: 10px;
   margin-top: 5px;
   background-color: rgb(36, 174, 177);
@@ -353,6 +354,7 @@ del {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 19px;
 }
 
 strong {
