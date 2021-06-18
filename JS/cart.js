@@ -208,3 +208,9 @@ function removeData(el) {
         }
     }
 }
+
+
+let userLoginName = document.getElementById('userLoginName');
+userLoginName.textContent = "Admin"
+
+userLoginName.setAttribute('href', '#')

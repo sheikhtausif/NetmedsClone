@@ -151,3 +151,9 @@ function emptyCart() {
     count = JSON.parse(localStorage.getItem('count'))
     itemsInCart.textContent = count;
 }
+
+
+let userLoginName = document.getElementById('userLoginName');
+userLoginName.textContent = "Admin"
+
+userLoginName.setAttribute('href', '#')
