@@ -50,7 +50,7 @@ const object1 = [
         name: `Medisales PPE Kit`,
         mfr: `Medisales`,
         price1: `Rs. 1499.0`,
-        price2: 974.35,
+        price2: 974.50,
     },
 
     {
@@ -178,7 +178,7 @@ const obj = [
         name: `INLIFE Ashwagandha Ghan Capsules 60's`,
         mfr: ` Inlife Pharma Private Limited`,
         price1: `Rs. 499`,
-        price2: 299.40,
+        price2: 299.50,
     },
 
     {
@@ -259,7 +259,7 @@ const obj = [
         name: `Sahyog Wellness Multi Function Non-Contact Body & Object`,
         mfr: ` Sahyog Wellness`,
         price1: `Rs. 2,499`,
-        price2: 1449.42,
+        price2: 1449.50,
     },
 ];
 
