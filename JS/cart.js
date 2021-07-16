@@ -46,7 +46,6 @@ function showCart(data) {
     }, 2500)
 
     let sum = 0;
-    // sum.toFixed(2);
     for (item in data) {
         let el = data[item];
 
@@ -104,7 +103,6 @@ function showCart(data) {
             p2Child1.textContent = `Rs.${total}`
 
             sum += (total) - oldPrice;
-            // sum.toFixed(2);
 
             localStorage.setItem('totalPrice', JSON.stringify(sum))
 
@@ -121,9 +119,6 @@ function showCart(data) {
         btnChild3.textContent = `Remove`
         detailDivChild3.append(pChild3, btnChild3)
 
-        // let itemsInCart = document.getElementById('itemsInCart');
-        // itemsInCart.textContent = count
-
         btnChild3.addEventListener('click', function (event) {
             event.target.parentNode.parentNode.parentNode.remove();
             removeData(el.id);
@@ -132,7 +127,6 @@ function showCart(data) {
             let oldPrice = Number(getP.split('Rs.')[1])
 
             sum -= oldPrice;
-            // sum.toFixed(2);
 
             localStorage.setItem('totalPrice', JSON.stringify(sum))
 

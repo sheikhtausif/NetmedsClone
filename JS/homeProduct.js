@@ -52,25 +52,7 @@ const upperObj = [
         mfr: `Mfr: Bio Veda Action Research Company`,
         price1: `Rs. ${220.00}`,
         price2: 180.40,
-    },
-    // {
-    //     id: `${7}`,
-    //     disc: `${6}`,
-    //     image: `https://www.netmeds.com/images/product-v1/150x150/408895/himalaya_herbals_spf_15_protective_sunscreen_lotion_50_ml_0.jpg`,
-    //     name: `Himalaya Herbals SPF 15 Protective Sunscreen Lotion 50 ml`,
-    //     mfr: `The Himalaya Drug Company`,
-    //     price1: `Rs. ${120.00}`,
-    //     price2: 112.8,
-    // },
-    // {
-    //     id: `${8}`,
-    //     disc: `${6}`,
-    //     image: `https://www.netmeds.com/images/product-v1/150x150/408895/himalaya_herbals_spf_15_protective_sunscreen_lotion_50_ml_0.jpg`,
-    //     name: `Himalaya Herbals SPF 15 Protective Sunscreen Lotion 100 ml`,
-    //     mfr: `The Himalaya Drug Company`,
-    //     price1: `Rs. ${220.00}`,
-    //     price2: 206.80,
-    // },
+    }
 ];
 
 
@@ -128,25 +110,7 @@ const lowerObj = [
         mfr: `Sahyog Wellness`,
         price1: `Rs. ${2499.00}`,
         price2: 1699.30,
-    },
-    // {
-    //     id: `${15}`,
-    //     disc: `${20}`,
-    //     image: `https://www.netmeds.com/images/product-v1/150x150/910015/floh_anti_bacterial_face_mask_kn95_20s_0_0.jpg`,
-    //     name: `Floh Anti Bacterial Face Mask - K N95 (Pack of 20)`,
-    //     mfr: `Huizhou Green Communication Equipment Manufacturing Co Ltd`,
-    //     price1: `Rs. ${5000.00}`,
-    //     price2: 4000.00,
-    // },
-    // {
-    //     id: `${16}`,
-    //     disc: `${0}`,
-    //     image: `https://www.netmeds.com/images/product-v1/150x150/default/no_image.png`,
-    //     name: `Savlon Fresh Disinfectant Hand Sanitizer Liquid 200 ml`,
-    //     mfr: `Itc India Ltd`,
-    //     price1: ``,
-    //     price2: 100.00,
-    // },
+    }
 ];
 // ! Upper Object
 if (localStorage.getItem("upperItems") == null) {

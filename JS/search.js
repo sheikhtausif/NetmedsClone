@@ -46,23 +46,7 @@ const search = [
         mfr: `Ayur Herbals`,
         price1: `Rs. ${100}`,
         price2: 88,
-    },
-    // {
-    //     disc: `${18}% OFF`,
-    //     image: `https://www.netmeds.com/images/product-v1/150x150/407053/biotique_bio_aloe_vera_30_spf_uva_uvb_sunscreen_ultra_soothing_face_cream_for_normal_to_oily_skin_50_gm_0.jpg`,
-    //     name: `Biotique Bio Aloe Vera 30+ SPF UVA/UVB Sunscreen Ultra Soothing Face Cream for Normal to Oily Skin 50 gm`,
-    //     mfr: ` Bio Veda Action Research Company`,
-    //     price1: `Rs. ${220}`,
-    //     price2: 180,
-    // },
-    // {
-    //     disc: `${6}% OFF`,
-    //     image: `https://www.netmeds.com/images/product-v1/150x150/408895/himalaya_herbals_spf_15_protective_sunscreen_lotion_50_ml_0.jpg`,
-    //     name: `Himalaya Herbals SPF 15 Protective Sunscreen Lotion 50 ml`,
-    //     mfr: ` The Himalaya Drug Company`,
-    //     price1: `Rs. ${120}`,
-    //     price2: 112.8,
-    // },
+    }
 ];
 // console.log(`Search`, search[0].name)
 const searchProduct = () => {

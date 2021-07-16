@@ -14,17 +14,14 @@ body {
   width: 98%;
   margin: auto;
   display: flex;
-  /* border: 1px solid black; */
 }
 
 #leftDivision {
   width: 21%;
-  /* border: 1px solid black; */
 }
 
 #rightDivision {
   width: 79%;
-  /* border: 1px solid black; */
 }
 
 #Category {
@@ -135,7 +132,7 @@ body {
 
 /**=======================
  * !      right division
- * ! first section - image slidding.
+ * ! first section - image sliding.
  *========================**/
 
 #imageSlider {
@@ -153,7 +150,7 @@ body {
 }
 
 /**=======================
- * !      shop catagory
+ * !      shop category
  *========================**/
 
 #shopCategory {
@@ -174,7 +171,6 @@ body {
 .shopItem {
   height: 190px;
   display: flex;
-  /* border: 1px solid black; */
 }
 
 .shopItem>div {
@@ -190,7 +186,6 @@ body {
   width: 100%;
   height: 70%;
   border-radius: 10px;
-  /* border: 1px solid black; */
 }
 
 span {
@@ -235,11 +230,6 @@ span {
   cursor: pointer;
 }
 
-/* .sortbtn:nth-child(1) {
-  border: 1px solid rgb(36, 174, 177);
-  color: rgb(36, 174, 177);
-} */
-
 .sortHover {
   border: 1px solid rgb(36, 174, 177);
   color: rgb(36, 174, 177);
@@ -271,12 +261,10 @@ span {
 
 #second {
   width: 98%;
-  /* height: 900px; */
   display: grid;
   grid-template-columns: 24% 24% 24% 24%;
   padding: 1%;
   gap: 1.2%;
-  /* border: 1px solid black; */
   margin: 0px auto;
   background-color: white;
 }
@@ -284,7 +272,6 @@ span {
 .productCardCss {
   height: 340px;
   border-radius: 10px;
-  /* margin: 10px; */
   border: 1px solid rgba(112, 112, 112, 0.38);
 }
 
@@ -306,27 +293,21 @@ span {
 
 .posterDivCss {
   height: 50%;
-  /* border: 1px solid black; */
   border-radius: 10px;
 }
 
 .posterDivCss>img {
   width: 100%;
   height: 100%;
-  /* border-radius: 10px; */
-  /* border: 1px solid black; */
 }
 
 .textDivCss {
   width: 90%;
-  /* height: 49%; */
   margin: auto;
   padding: 10px;
-  /* border: 1px solid black; */
 }
 
 .textDivCss>p {
-  /* padding: 2px; */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -379,12 +360,10 @@ strong {
 
 #inner {
   width: 98%;
-  /* height: 900px; */
   display: grid;
   grid-template-columns: 24% 24% 24% 24%;
   padding: 1%;
   gap: 1.2%;
-  /* border: 1px solid black; */
   margin: 0px auto;
   background-color: white;
 }
@@ -392,6 +371,5 @@ strong {
 .productCardCss2 {
   height: 340px;
   border-radius: 10px;
-  /* margin: 10px; */
   border: 1px solid rgba(112, 112, 112, 0.38);
 }

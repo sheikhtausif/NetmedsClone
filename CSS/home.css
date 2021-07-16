@@ -6,7 +6,6 @@
 
 #content {
     width: 100%;
-    /* height: 100vh; */
     background: rgb(243, 243, 243);
     font-family: 'Lato', sans-serif;
     padding-top: 14px;
@@ -34,7 +33,6 @@
     height: 48vh;
     margin: auto;
     margin-top: 15px;
-    /* border: 1px solid red; */
 }
 
 #mainSlider>img {
@@ -51,7 +49,6 @@
     display: flex;
     margin: 50px auto;
     justify-content: space-around;
-    /* border: 1px solid black; */
 }
 
 .row {
@@ -160,7 +157,6 @@
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
-    /* border: 1px solid green; */
 }
 
 .diagnoCard {
@@ -189,7 +185,6 @@
 
 .diag-txt h3 {
     margin: 8px 0;
-    /* letter-spacing: 0.5px; */
     font-size: 17px;
 }
 
@@ -250,7 +245,6 @@
     border-radius: 10px;
     padding: 0 12px;
     height: 464px;
-    /* border: 1px solid green; */
 }
 
 .homeProducts>h5 {
@@ -279,8 +273,6 @@
     width: 15.8%;
     border: 1px solid #dbd6d6;
     border-radius: 10px;
-    /* padding: 5px; */
-    /* letter-spacing: 1px; */
 }
 
 .flexProduct>div>p:first-child {
@@ -291,7 +283,6 @@
     color: white;
     border-radius: 4px;
     margin: 7px;
-    /* letter-spacing: 1px; */
 }
 
 .flexProduct h5, .flexProduct p {
@@ -349,7 +340,6 @@
 .clearfix {
     width: 97.5%;
     margin: auto;
-    /* height: 320px; */
     border-radius: 10px;
     background: white;
     margin-bottom: 20px;
@@ -381,7 +371,6 @@
     height: 250px;
     display: flex;
     position: relative;
-    /* overflow: scroll; */
 }
 
 .product>div {
@@ -413,7 +402,6 @@
     gap: 2.6%;
     padding-bottom: 2.6%;
     background-color: #f3f3f3;
-    /* border: 1px solid black; */
 }
 
 .split-section {
@@ -421,7 +409,6 @@
     display: block;
     border-radius: 10px;
     position: relative;
-    /* border: 1px solid blue; */
 }
 
 .split-section>img {
@@ -438,7 +425,6 @@
     position: absolute;
     top: 120px;
     background-color: white;
-    /* border: 1px solid black; */
 }
 
 .brand-detail>h4 {
@@ -462,7 +448,6 @@
     display: flex;
     gap: 20px;
     padding: 20px;
-    /* overflow: scroll; */
 }
 
 .product2 img {
@@ -477,7 +462,6 @@
     border-radius: 10px;
     margin-top: 20px;
     position: relative;
-    /* border: 1px solid red; */
 }
 
 .item-1:nth-child(1) {
@@ -526,13 +510,11 @@
     background: white;
     border-radius: 10px;
     display: flex;
-    /* border:1px solid red; */
 }
 
 .leftDiv {
     width: 50%;
     padding: 20px;
-    /* border: 1px solid green; */
 }
 
 .leftDiv>h5 {
@@ -559,11 +541,9 @@
     grid-template-columns: 28% 28% 28%;
     justify-items: center;
     gap: 6%;
-    /* border: 1px solid black; */
 }
 
 .iconsDiv>div {
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -582,7 +562,6 @@
 }
 
 .rightDiv {
-    /* border: 1px solid red; */
     padding-left: 6%;
 }
 
@@ -669,21 +648,13 @@
     margin-left: 15px;
 }
 
-/* #advice-form {
-    width: 100%;
-    margin: auto;
-    background-color: #ffffff;
-} */
-
 .item {
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
-    /* border: 1px solid green; */
 }
 
 .card {
-    /* min-width: 23%; */
     justify-content: center;
     border: 1px solid #edeef0;
     border-radius: 10px;

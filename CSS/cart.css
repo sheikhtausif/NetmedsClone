@@ -5,22 +5,18 @@ body{
 #cartCont{
     width: 66%;
     margin: auto;
-    /* border: 1px solid red; */
 }
 #cartCont>h1{
     margin: 16px;
 }
 #leftCart{
     width: 65%;
-    /* height: 30vh; */
     float: left;
-    /* border: 1px solid green; */
 }
 .cartSlider{
     height: 110px;
     border-radius: 10px;
     margin-bottom: 14px;
-    /* border: 1px solid grey; */
 }
 .cartSlider>img{
     width: 100%;
@@ -32,7 +28,6 @@ body{
     background: white;
     padding: 15px;
     border-radius: 10px;
-    /* border: 1px solid rgb(140, 145, 140); */
 }
 .mainCart>h5, #rightCart>h5{
     color: rgb(102, 101, 101);
@@ -65,14 +60,12 @@ body{
     display: flex;
     flex-direction: column;
     gap: 18px;
-    /* border: 1px solid red; */
 }
 .cartDivPro>div:last-child>div{
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    /* border: 1px solid green; */
 }
 .cartDivPro>div:last-child>div:first-child>p:first-child{
     width: 55%;
@@ -107,7 +100,6 @@ body{
 .cartDivPro>div:last-child>div:nth-child(3) p{
     color: #6f7284;
     font-size: 13px;
-    /* font-style: italic; */
 }
 .cartDivPro>div:last-child>div:nth-child(3) button{
     background: none;
@@ -127,7 +119,6 @@ body{
     padding: 14px;
     border-radius: 10px;
     background: white;
-    /* border: 1px solid green; */
 }
 #rightCart>div{
     width: 100%;
@@ -136,13 +127,11 @@ body{
     flex-direction: column;
     gap: 22px;
     margin-top: 35px;
-    /* border: 1px solid red; */
 }
 #rightCart>div>div{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid red; */
 }
 #rightCart>div>div:first-child p{
     font-size: 14px;

@@ -36,12 +36,3 @@ editH4.addEventListener('keyup', function () {
 
     editH4.textContent = newValue
 })
-
-// let navArrow = document.getElementsByClassName('navArrow');
-// navArrow.addEventListener('mouseover', display);
-
-// function display() {
-//     let subNav = document.getElementsByClassName('subNav')
-
-//     console.log("Hello")
-// }

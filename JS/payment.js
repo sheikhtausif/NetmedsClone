@@ -46,16 +46,6 @@ function showAddress(e) {
         <p>${state}</p>
         <p>${pin}</p>`
 
-        // addressDiv.innerHTML = `
-        // <h3>Your Shipping Address</h3>
-        // <p><Strong>Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${name}</p>
-        // <p><Strong>Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${email}</p>
-        // <p><Strong>Number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${number}</p>
-        // <p><Strong>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${address}</p>
-        // <p><Strong>City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${city}</p>
-        // <p><Strong>State: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Strong> ${state}</p>
-        // <p><Strong>Pin Code: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</Strong> ${pin}</p>`
-
         paymentDiv.innerHTML = `
         <div>
             <label for="pay">CASH ON DELIVERY</label>

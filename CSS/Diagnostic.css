@@ -140,7 +140,6 @@ body {
 .packages>div {
     border: 2px solid white;
     width: 17.5%;
-    /* margin: auto; */
     margin: 1%;
     height: 10vh;
 }
@@ -173,7 +172,6 @@ body {
     grid-template-columns: 20% 20% 20% 20%;
     grid-template-rows: 58vh 58vh;
     grid-gap: 3%;
-    /* margin: auto; */
     justify-content: center;
     margin-top: 3%;
 }
@@ -254,7 +252,6 @@ del, #start, #price {
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 43vh;
     grid-gap: 3%;
-    /* margin: auto; */
     justify-content: center;
     margin-top: 3%;
     margin: auto;
@@ -320,7 +317,6 @@ del, #start, #price {
     grid-template-columns: 20% 21% 23% 20%;
     grid-template-rows: 15vh;
     grid-gap: 3%;
-    /* margin: auto; */
     justify-content: center;
     margin-top: 3%;
     margin: auto;

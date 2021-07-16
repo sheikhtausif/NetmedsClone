@@ -68,7 +68,6 @@ body {
     height: 250px;
     display: flex;
     position: relative;
-    /* overflow: scroll; */
 }
 
 .product>div {
@@ -95,7 +94,6 @@ body {
     border-radius: 10px;
     padding: 0 12px;
     height: 464px;
-    /* border: 1px solid green; */
 }
 
 .homeProducts>h5 {
@@ -124,8 +122,6 @@ body {
     width: 15.8%;
     border: 1px solid #dbd6d6;
     border-radius: 10px;
-    /* padding: 5px; */
-    /* letter-spacing: 1px; */
 }
 
 .flexProduct>div>p:first-child {
@@ -136,7 +132,6 @@ body {
     color: white;
     border-radius: 4px;
     margin: 7px;
-    /* letter-spacing: 1px; */
 }
 
 .flexProduct h5, .flexProduct p {
@@ -216,7 +211,6 @@ body {
     border-radius: 10px;
     margin: 30px 20px 10px 14px;
     position: relative;
-    /* border: 1px solid red; */
 }
 
 .item-1:nth-child(1) {

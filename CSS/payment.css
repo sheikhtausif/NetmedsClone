@@ -5,7 +5,6 @@
 
 body {
     background: rgb(246, 246, 247);
-    /* filter: blur(4px); */
 }
 
 #popUp {
@@ -46,7 +45,6 @@ body {
     border-radius: 10px;
     font-family: 'Lato', sans-serif;
     padding: 14px;
-    /* border: 1px solid black; */
 }
 
 #mainDiv h2 {
@@ -59,13 +57,11 @@ body {
     width: 50%;
     height: 100%;
     border-right: 1px solid rgb(216, 210, 210);
-    /* border: 1px solid red; */
 }
 
 #paymentD {
     width: 50%;
     height: 100%;
-    /* border: 1px solid green; */
 }
 
 #addressForm {
@@ -75,7 +71,6 @@ body {
 }
 
 #addressForm>label {
-    /* display: block; */
     margin-bottom: 2px;
     font-size: 13px;
     font-weight: bold;
