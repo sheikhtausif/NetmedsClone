@@ -41,7 +41,8 @@
 
 
 ## Demo Image of Our Cloned Website
-![Uploading Screenshot 2021-07-25 at 9.30.33 PM.png…]()
+<img width="1430" alt="Screenshot 2021-07-25 at 9 30 33 PM" src="https://user-images.githubusercontent.com/40136017/126905623-96620fe6-50db-456a-a061-5c5a83e384e2.png">
+
 
 
 ## Note:
