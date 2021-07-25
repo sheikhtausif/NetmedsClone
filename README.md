@@ -18,12 +18,12 @@
 
 ## Functionalities Added
 
-* Carousels*
-* Add to Cart products*
-* Sorting by price*
-* Quantity change Functionality*
-* Payments System*
-* Address Adding Functionality*
+* Carousels
+* Add to Cart products
+* Sorting by price
+* Quantity change Functionality
+* Payments System
+* Address Adding Functionality
 
 ## Team Members
 
