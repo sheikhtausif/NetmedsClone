@@ -29,7 +29,7 @@
 
 * *Ankit Kumar*
 * *Vaibhav Raj*
-* *Mohd Tausi*
+* *Mohd Tausif*
 * *Pawan Patidar*
 * 
 ## Tech Stack
@@ -37,7 +37,7 @@
 * *HTML-5*
 * *CSS-3*
 * *JS-DOM*
-* *GitHub*
+* *LocalStorage*
 
 
 ## Demo Image of Our Cloned Website
