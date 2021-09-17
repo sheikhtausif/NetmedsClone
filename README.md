@@ -14,7 +14,7 @@ https://netmeds-clone.vercel.app/
 
 ## Installing and Running
 
-Executing the commands mentioned below one by one in your command line will help in making this app .
+Executing the commands mentioned below one by one in your command line will help in making this app. <br/>
 **Cloning**
 
 ```
