@@ -69,4 +69,3 @@ run index.html
 
 ## Note:
 *All the images and icon links have been taken from main website and some other internet sources and may be subject to copyright so try not to use the images or icons for business purposes or reproduce them without the approval of the owner of the content used here are just for the making this project and for learning purpose.*
-
