@@ -1,10 +1,32 @@
-# *Netmeds*
+# *Netmeds Clone*
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 *This is a working clone of the Nedmeds website, this project has been done in order to learn the basic working of a website by implementing HTML5, CSS3, JavaScript(DOM). Working on this project helps to learn a lot of new things that goes into building a website. This is our first collaborative project under the guidance of MASAI Team to facilitate the full stack web development curriculam.* 
 
 ## Uses
 
 *Netmeds is a trusted Indian online pharmacy. Which provides the quick online purchase and fast delivery of prescription medications.*
+
+**To see the live site click the below link.**
+
+https://netmeds-clone.vercel.app/
+
+## Installing and Running
+
+Executing the commands mentioned below one by one in your command line will help in making this app .
+**Cloning**
+
+```
+https://github.com/sheikhtausif/NetmedsClone.git
+```
+
+**To run the react app execute below command**
+
+```
+cd ./NetmedsClone
+run index.html
+```
 
 ## Pages Build
 
